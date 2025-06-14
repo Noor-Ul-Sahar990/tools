@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF to JPG Converter - Converter Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css">
+  <link rel="stylesheet" href="tool1.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="../../index.html">ConverterTools</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tools
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+              <li><a class="dropdown-item" href="../pdf_to_jpg/tool1.html">PDF to JPG</a></li>
+              <li><a class="dropdown-item" href="../jpg_to_pdf/tool2.html">Text to PDF</a></li>
+              <li><a class="dropdown-item" href="../pdf_to_png/tool3.html">JPG to PDF</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="../../pages/about.html">About Us</a>
+          <a class="nav-link" href="../../pages/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container full-page-section d-flex align-items-center justify-content-center flex-column">
+    <div class="tool-section text-center mt-2" data-aos="fade-down">
+      <img src="../../assets/images/tool-icon-placeholder.png" alt="Tool Logo" class="tool-logo mb-3">
+      <h1 class="display-4 fw-bold mb-3">PDF to JPG Converter</h1>
+      <p class="lead">Easily convert your PDF files to high-quality JPG images in just a few clicks.</p>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8">
+        <div class="card file-picker p-4" data-aos="zoom-in">
+          <input type="file" id="pdfInput" accept="application/pdf" class="d-none">
+          <div class="file-picker-content text-center">
+            <p id="filePickerText">Drag & Drop your PDF here or click to upload</p>
+            <p id="fileSizeText" class="mt-2 d-none"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 w-100">
+      <div class="col-md-8 mx-auto">
+        <div class="progress d-none" id="loadingBar">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 0%" id="progressBar"></div>
+        </div>
+        <p id="downloadMessage" class="text-center mt-2 d-none">Your JPG is ready! Click the button to download.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-3 w-100">
+      <div class="col-md-8 d-flex justify-content-center align-items-center gap-3">
+        <select id="qualitySelect" class="form-select quality-select">
+          <option value="0.5">Low Quality (Smaller Size)</option>
+          <option value="1.0" selected>Medium Quality</option>
+          <option value="2.0">High Quality (Larger Size)</option>
+        </select>
+        <button id="clearButton" class="btn btn-secondary clear-btn">Clear</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8 d-flex justify-content-between align-items-center">
+        <button id="startButton" class="btn btn-primary start-btn">Start Conversion</button>
+        <button id="downloadButton" class="btn btn-success download-btn" disabled>Download JPG</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <script src="../../js/app.js"></script>
+  <script src="tool1.js"></script>
+</body>
+</html>

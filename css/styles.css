@@ -1,0 +1,302 @@
+/* Reset and Base Styles */
+body {
+  background-color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+.navbar.bg-primary {
+  background-color: #2dd4bf !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+  height: 15vh;
+}
+
+.navbar-brand.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand.logo-text:hover {
+  color: #e2e8f0 !important;
+}
+
+.navbar-nav {
+  gap: 2rem; /* Increased spacing between buttons */
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #e2e8f0;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #e2e8f0 !important;
+}
+
+.dropdown-menu {
+  background-color: #2dd4bf;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.dropdown-item {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #14b8a6;
+  color: #e2e8f0 !important;
+}
+
+/* Website Info Section (Homepage) */
+.website-info {
+  padding: 2rem 0;
+}
+
+.website-info .website-icon {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.website-info h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -1px;
+}
+
+.website-info .lead {
+  font-size: 1.3rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Full Page Section (About/Contact/Terms) */
+.full-page-section {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  background-color: #f1f5f9;
+}
+
+.full-page-section h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: -1px;
+}
+
+.full-page-section .lead {
+  font-size: 1.3rem;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Tools Section (Homepage) */
+.tools-section {
+  height: 80vh;
+  padding-bottom: 2rem;
+}
+
+.card.tool-card {
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: none;
+  height: 250px; /* Normal size */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.card.tool-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.tool-info .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.tool-info .card-text {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.tool-icon {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.card.tool-card:hover .tool-icon {
+  transform: rotate(10deg);
+}
+
+/* Bottom Gap Section (Homepage) */
+.gap-section-bottom {
+  height: 40vh; /* Updated to 40% */
+}
+
+/* Terms Section (Homepage) */
+.terms-section {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer.bg-primary {
+  background-color: #2dd4bf !important;
+}
+
+footer h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer a {
+  color: #e2e8f0 !important;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar.bg-primary {
+    height: auto;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand.logo-text {
+    font-size: 1.5rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem; /* Reduced gap for mobile */
+  }
+
+  .navbar-nav .nav-item, .navbar-nav .dropdown {
+    margin: 8px 0;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-item {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .website-info {
+    padding: 1rem 0;
+  }
+
+  .website-info .website-icon {
+    height: 60px;
+    width: 60px;
+  }
+
+  .website-info h1 {
+    font-size: 2.5rem;
+  }
+
+  .website-info .lead {
+    font-size: 1.1rem;
+  }
+
+  .full-page-section {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .full-page-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .full-page-section .lead {
+    font-size: 1.1rem;
+  }
+
+  .tools-section {
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .col-md-3, .col-sm-6 {
+    width: 100%;
+  }
+
+  .card.tool-card {
+    height: 200px;
+    margin-bottom: 2rem !important; /* Increased gap for mobile */
+  }
+
+  .tool-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  .gap-section-bottom {
+    height: 20vh; /* Adjusted for mobile */
+  }
+
+  .terms-section {
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  footer h5 {
+    font-size: 1.3rem;
+  }
+
+  footer p {
+    font-size: 0.95rem;
+  }
+}

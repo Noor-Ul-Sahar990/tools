@@ -1,0 +1,159 @@
+/* Tool Section */
+.tool-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.tool-section .text-muted {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* File Picker */
+.file-picker {
+  border: 2px dashed #2dd4bf;
+  background: #ffffff;
+  border-radius: 16px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.file-picker.dragover {
+  border-color: #14b8a6;
+  background: #f8fafc;
+}
+
+.file-picker-content p {
+  font-size: 1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Progress Bar */
+.progress {
+  height: 1.2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #e2e8f0;
+}
+
+.progress-bar {
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: width 0.3s ease;
+}
+
+/* Image Container */
+.image-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.text-small {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 0.5rem;
+}
+
+/* Clear Button */
+.clear-btn {
+  font-size: 0.95rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  background-color: #6b7280;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #4b5563;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.start-btn, .download-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.8rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Start Button - Always Enabled */
+.start-btn {
+  background-color: #0d6efd;
+  border: none;
+}
+
+.start-btn:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.download-btn {
+  background-color: #22c55e;
+  border: none;
+}
+
+.download-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.download-btn:not(:disabled):hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tool-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .tool-section .text-muted {
+    font-size: 0.8rem;
+  }
+
+  .file-picker {
+    min-height: 120px;
+  }
+
+  .file-picker-content p {
+    font-size: 0.9rem;
+  }
+
+  .image-container .row {
+    flex-direction: column;
+  }
+
+  .image-box {
+    margin-bottom: 1rem;
+  }
+
+  .clear-btn, .start-btn, .download-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+}
