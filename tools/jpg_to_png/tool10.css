@@ -1,4 +1,9 @@
 /* Tool Section */
+.tool-section .tool-logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
 .tool-section h1 {
   font-size: 3rem;
   font-weight: 800;
