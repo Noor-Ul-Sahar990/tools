@@ -172,7 +172,7 @@ body {
 
 /* Terms Section (Homepage) */
 .terms-section {
-  height: 40vh;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
