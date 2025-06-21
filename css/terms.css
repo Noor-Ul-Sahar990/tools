@@ -1,0 +1,102 @@
+    :root {
+      --main-color: #19c3a1;
+      --bg-light: #f5f7fa;
+      --text-light: #333;
+      --card-bg-light: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      /* background-color: var(--main-color); */
+      color: #19c3a1;
+      padding: 40px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      animation: fadeIn 1.2s ease-in;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      /* background: var(--card-bg-light); */
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+      border-radius: 12px;
+      animation: fadeInUpText 1s ease-in-out;
+    }
+
+    h2 {
+      color: var(--main-color);
+      margin-top: 30px;
+      animation: fadeInUpText 1s ease-in-out;
+    }
+
+    p, li, ul, a {
+      animation: fadeInUpText 1.2s ease-in-out;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #e0f7f4;
+      margin-top: 40px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUpText {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      main {
+        padding: 20px;
+      }
+    }
