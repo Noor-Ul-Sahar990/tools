@@ -1,7 +1,7 @@
 /* Tool Section */
 .tool-section .tool-logo {
-  height: 200px;
-  width: 200px;
+  height: 90px;
+  width: 90px;
   object-fit: contain;
 }
 
@@ -224,4 +224,20 @@
 
 .footer-colored .social-icon:hover {
   transform: scale(1.1);
+}
+.footer-colored .social-icon {
+ /* font-size: 50px; */
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.footer-colored .social-icon:hover {
+  transform: scale(1.1);
+}
+.social-icon{
+  font-size: 25px ;
+}
+.social-icon a{
+  text-decoration: none;
 }

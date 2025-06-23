@@ -146,8 +146,7 @@
 }
 
 .footer-colored .social-icon {
-  width: 32px;
-  height: 32px;
+ /* font-size: 50px; */
   border-radius: 50%;
   object-fit: contain;
   transition: transform 0.3s ease;
@@ -155,4 +154,10 @@
 
 .footer-colored .social-icon:hover {
   transform: scale(1.1);
+}
+.social-icon{
+  font-size: 25px ;
+}
+.social-icon a{
+  text-decoration: none;
 }
