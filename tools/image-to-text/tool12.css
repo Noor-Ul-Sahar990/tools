@@ -1,64 +1,119 @@
 .tool-logo {
-  height: 80px;
-  width: 80px;
+  height: 5rem;
+  width: 5rem;
   object-fit: contain;
+  max-width: 100%;
 }
+
 .tool-section h1 {
   font-size: 3rem;
   font-weight: 800;
   color: #1e293b;
+  text-align: center;
 }
+
 .tool-section .lead {
   font-size: 1.2rem;
   color: #64748b;
+  text-align: center;
+  margin-bottom: 1rem;
 }
+
 .file-picker {
   border: 2px dashed #2dd4bf;
   background: #ffffff;
   border-radius: 16px;
   min-height: 200px;
-  min-width: 600px;
+  width: 90%;
+  max-width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin: 0 auto;
 }
+
 .file-picker:hover {
   background-color: #f0fdfa;
 }
+
 .output-box {
   min-height: 200px;
-  min-width: 600px;
-  border: 1px solid #ccc;
+  width: 90%;
+  max-width: 600px;
+  border: 2px dashed #2dd4bf;
   padding: 15px;
   border-radius: 8px;
   background-color: #f8f9fa;
   color: #1e293b;
-  /* scroll-behavior: smooth; */
-  /* overflow: scroll; */
-  border: 2px dashed #2dd4bf;
+  margin: 1rem auto;
   transition: all 0.3s ease;
+  overflow: auto;
 }
-.output-box:focus{
-      border-color: #2dd4bf;
-      background-color: #e6f0ff;
-      box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
-      outline: none;
-      overflow: scroll;
-      overflow-y: scroll;
+
+.output-box:focus {
+  border-color: #2dd4bf;
+  background-color: #e6f0ff;
+  box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
+  outline: none;
 }
-.start-btn, .download-btn {
+
+.start-btn,
+.download-btn {
   font-size: 1.1rem;
   padding: 0.75rem 2rem;
   border-radius: 8px;
+  margin: 0.5rem 0.5rem;
 }
+
 .clear-btn {
   margin-left: 10px;
 }
-.col-md-8{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    /* height: 50px; */
-    width: 100vw;
+
+.col-md-8 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* 🔄 Responsive Media Queries */
+@media (max-width: 768px) {
+  .tool-section h1 {
+    font-size: 2.25rem;
+  }
+
+  .tool-section .lead {
+    font-size: 1rem;
+  }
+
+  .file-picker,
+  .output-box {
+    min-height: 150px;
+    width: 95%;
+  }
+
+  .start-btn,
+  .download-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-logo {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .tool-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .tool-section .lead {
+    font-size: 0.9rem;
+  }
 }
