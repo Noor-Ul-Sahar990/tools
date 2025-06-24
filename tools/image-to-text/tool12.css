@@ -57,8 +57,14 @@
   box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
   outline: none;
 }
-
-.start-btn,
+.output-box:hover{
+    border-color: #2dd4bf;
+  background-color: #e6f0ff;
+  box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
+  outline: none;
+  cursor: pointer;
+}
+/* .start-btn, */
 .download-btn {
   font-size: 1.1rem;
   padding: 0.75rem 2rem;

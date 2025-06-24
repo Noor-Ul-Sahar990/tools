@@ -1,0 +1,154 @@
+/* Medium Devices (Tablets) */
+.tool-logo {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Main Heading */
+.tool-section h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+/* Subtitle / Lead Paragraph */
+.tool-section .lead {
+  font-size: 1.125rem;
+  color: #475569;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .tool-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .tool-section .lead {
+    font-size: 1rem;
+  }
+
+  .tool-section .tool-logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  .file-picker {
+    padding: 1.5rem;
+    min-height: 200px;
+    min-width: 200px;
+  }
+
+  .file-picker-content p {
+    font-size: 0.65rem;
+  }
+
+  .clear-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .start-btn,
+  .download-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  #downloadMessage {
+    font-size: 0.95rem;
+  }
+
+  .col-md-8 {
+    padding: 0 1rem;
+  }
+}
+
+/* Small Devices (Mobile) */
+@media (max-width: 480px) {
+  .tool-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .tool-section .lead {
+    font-size: 0.95rem;
+  }
+
+  .tool-section .tool-logo {
+    height: 60px;
+    width: 60px;
+  }
+
+  .file-picker-content p {
+    font-size: 0.9rem;
+  }
+
+  .start-btn,
+  .download-btn,
+  .clear-btn {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 10px;
+  }
+
+  .col-md-8.d-flex.justify-content-between,
+  .col-md-8.d-flex.justify-content-center {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .gap-3 {
+    gap: 0.75rem !important;
+  }
+}
+.file-picker {
+  min-height: 200px;
+  width: 90%;
+  max-width: 600px;
+  border: 2px dashed #2dd4bf;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  color: #1e293b;
+  margin: 1rem auto;
+  transition: all 0.3s ease;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Hover Effect */
+.file-picker:hover {
+  border-color: #2dd4bf;
+  background-color: #e6f0ff;
+  box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
+  cursor: pointer;
+}
+
+/* Focus (optional: if tabindex or JS focus is applied) */
+.file-picker:focus {
+  border-color: #2dd4bf;
+  background-color: #e6f0ff;
+  box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
+  outline: none;
+}
+
+/* Drag-over effect (already used in JS) */
+.file-picker.dragover {
+  border-color: #14b8a6;
+  background: #f0fdfa;
+  box-shadow: 0 0 10px rgba(45, 212, 191, 0.4);
+}
