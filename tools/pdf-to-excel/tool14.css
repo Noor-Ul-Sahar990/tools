@@ -1,0 +1,43 @@
+
+.tool-logo {
+  height: 90px;
+  width: 90px;
+  object-fit: contain;
+}
+.tool-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+.tool-section .lead {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+.file-picker {
+  border: 2px dashed #2dd4bf;
+  background: #ffffff;
+  border-radius: 16px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.file-picker:hover {
+  background-color: #f0fdfa;
+}
+.start-btn, .download-btn {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.start-btn { background-color: #2dd4bf; border: none; }
+.download-btn { background-color: #22c55e; border: none; }
+.clear-btn {
+  background-color: #6b7280;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+}
