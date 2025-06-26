@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="tool15.css" />
+  <link rel="stylesheet" href="../../css/styles.css">
+  <title>PDF to HTML Converter - Converter Tools</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="../../index.html">ConverterTools</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tools
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+              <li><a class="dropdown-item" href="tools/pdf_to_jpg/tool1.html">PDF to JPG</a></li>
+              <li><a class="dropdown-item" href="tools/jpg_to_pdf/tool2.html">JPG to PDF</a></li>
+              <li><a class="dropdown-item" href="tools/pdf_to_png/tool3.html">PDF to PNG</a></li>
+              <li><a class="dropdown-item" href="tools/png_to_pdf/tool4.html">PNG to PDF</a></li>
+              <li><a class="dropdown-item" href="tools/pdf_to_word/tool5.html">PDF to Word</a></li>
+              <li><a class="dropdown-item" href="tools/word_to_pdf/tool6.html">Word to PDF</a></li>
+              <li><a class="dropdown-item" href="tools/png_to_jpg/tool9.html">PNG to JPG</a></li>
+              <li><a class="dropdown-item" href="tools/jpg_to_png/tool10.html">JPG to PNG</a></li>
+              <li><a class="dropdown-item" href="tools/pdf_to_merge/tool7.html">PDF Merge</a></li>
+              <li><a class="dropdown-item" href="tools/image_compressor/tool8.html">Image compressor</a></li>
+              <li><a class="dropdown-item" href="tools/image_enhancement/tool11.html">Image Enhancement</a></li>
+              <li><a class="dropdown-item" href="tools/image-to-text/tool12.html">Image to Text</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="../../pages/about.html">About Us</a>
+          <a class="nav-link" href="../../pages/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container full-page-section d-flex align-items-center justify-content-center flex-column">
+    <div class="tool-section text-center mt-2" data-aos="fade-down">
+      <img src="../../assets/images/pdf-to-html.png" alt="Tool Logo" class="tool-logo mb-3">
+      <h1 class="display-4 fw-bold mb-3">PDF to HTML Converter</h1>
+      <p class="lead">Extract readable HTML from your PDF files in seconds.</p>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8">
+        <div class="card file-picker p-4" data-aos="zoom-in">
+          <input type="file" id="pdfInput" accept="application/pdf" class="d-none">
+          <div class="file-picker-content text-center">
+            <p id="filePickerText">Drag & Drop your PDF here or click to upload</p>
+            <p id="fileSizeText" class="mt-2 d-none"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 w-100">
+      <div class="col-md-8 text-center">
+        <div class="progress d-none" id="loadingBar">
+          <center><div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 0%" id="progressBar"></div></center>
+        </div>
+        <p id="downloadMessage" class="text-center mt-2 d-none">HTML extracted! Scroll down to view or download.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8 d-flex justify-content-between align-items-center">
+        <button id="clearButton" class="btn btn-secondary clear-btn">Clear</button>
+        <button id="convertButton" class="btn btn-primary start-btn" disabled>Start Conversion</button>
+        <a id="downloadButton" class="btn btn-success download-btn d-none" download="converted.html">Download HTML</a>
+      </div>
+    </div>
+
+    <div class="row mt-4 w-100">
+      <div class="col-md-10 mx-auto">
+        <div id="output" class="html-preview border rounded p-3 d-none"></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer-colored mt-5">
+  <div class="container py-4">
+    <div class="row">
+
+      <div class="col-md-3 col-6 mb-3">
+        <h6 class="text-uppercase fw-bold">Tools</h6>
+        <ul class="list-unstyled">
+          <li><a href="../pdf_to_jpg/tool1.html">PDF to JPG</a></li>
+          <li><a href="../jpg_to_pdf/tool2.html">JPG to PDF</a></li>
+          <li><a href="../pdf_to_png/tool3.html">PDF to PNG</a></li>
+          <li><a href="../png_to_pdf/tool4.html">PNG to PDF</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-6 mb-3">
+        <h6 class="text-uppercase fw-bold">More Tools</h6>
+        <ul class="list-unstyled">
+          <li><a href="../pdf_to_word/tool5.html">PDF to Word</a></li>
+          <li><a href="../word_to_pdf/tool6.html">Word to PDF</a></li>
+          <li><a href="../png_to_jpg/tool9.html">PNG to JPG</a></li>
+          <li><a href="../jpg_to_png/tool10.html">JPG to PNG</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 col-6 mb-3">
+        <h6 class="text-uppercase fw-bold">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="../../pages/about.html">About Us</a></li>
+          <li><a href="../../pages/contact.html">Contact</a></li>
+          <li><a href="../../pages/terms.html">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-2">Follow us</h6>
+        <form class="d-flex mb-3">
+          <input type="email" class="form-control me-2" placeholder="Your email">
+          <button class="btn btn-success" type="submit">Subscribe</button>
+        </form>
+        <div class="d-flex gap-3">
+          <a href="https://www.facebook.com/" style="text-decoration: none;" class="social-icon" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="https://www.twitter.com/" style="text-decoration: none;" class="social-icon" target="_blank"><i class="ri-twitter-fill"></i></a>
+          <a href="https://www.instagram.com/" style="text-decoration: none;" class="social-icon" target="_blank"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <div class="text-center pt-3 mt-3 border-top text-white small">
+      &copy; 2025 Converter Tools - All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+  </script>
+  <script src="tool15.js"></script>
+</body>
+</html>
