@@ -1,0 +1,185 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f1f5f9;
+  margin: 0;
+  padding: 0;
+}
+
+.qr-container {
+  max-width: 400px;
+  margin: 4rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.qr-container h1 {
+  color: #1e293b;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.qr-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  border: 2px dashed #2dd4bf;
+}
+#qrText{
+   width: 40%;
+  padding: 10px;
+  border: 2px dashed #2dd4bf;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: #0f172a;
+  background-color: #fff;
+  outline: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+} 
+button {
+  background-color: #2dd4bf;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px !important;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+ button:hover {
+  background-color: #1cc8b4;
+}
+
+.qr-box {
+  margin: 2rem 0;
+}
+/* QR Input Box styled like Drag & Drop */
+#qrInput {
+  width: 100%;
+  padding: 2rem;
+  border: 2px dashed #2dd4bf;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+  color: #0f172a;
+  background-color: #fff;
+  outline: none;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#qrInput::placeholder {
+  color: #0f172a;
+  opacity: 2;
+}
+
+/* Hover and Focus effect */
+#qrInput:hover,
+#qrInput:focus {
+  background-color: #ecfeff;
+  border-color: #0ea5e9;
+}
+
+#downloadBtn {
+  display: inline-block;
+  background-color: #1cc8b4;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+#downloadBtn:hover {
+  color: #cbd5e1;
+  /* border: 2px dashed #1cc8b4; */
+  background-color: #1cc8b4;
+}
+
+.hidden {
+  display: none;
+}
+.tool-logo {
+  height: 8rem;
+  width: 8rem;
+  object-fit: contain;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.tool-section h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.container1 {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.dropdown-menu .dropdown-item {
+  color: #fff;
+  background-color: #2dd4bf;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #1cc8b4;
+  color: #fff;
+}
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .container1 {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+  .tool-logo {
+    height: 7rem;
+    width: 7rem;
+  }
+  .tool-section h1 {
+    font-size: 2rem;
+  }
+  .upload-box {
+    padding: 1.5rem;
+  }
+  #colorPreview {
+    width: 50px;
+    height: 50px;
+  }
+  .dropdown-menu {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .tool-section h1 {
+    font-size: 1.75rem;
+  }
+  .upload-box label {
+    font-size: 0.9rem;
+  }
+  #colorPreview {
+    width: 40px;
+    height: 40px;
+  }
+}                                       

@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Image Color Pikker - Converter Tools</title>
+  <title>QR Code Generate - Converter Tools</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="tool17.css" />
+  <link rel="stylesheet" href="tool18.css" />
   <link rel="stylesheet" href="../../css/styles.css">
 
 </head>
@@ -55,23 +55,14 @@
  <!-- Main Tool -->
   <div class="container1">
     <div>
-    <img src="../../assets/images/color-piiker.png" alt="Tool Logo" class="tool-logo mb-3" />
-      <h1 class="display-4 fw-bold mb-3">Pick Color from Image</h1>
-      <p class="lead">Upload an image and click anywhere to pick a color</p>
-    </div>
-    <div class="upload-box" id="dropZone">
-      <input type="file" id="imageInput" accept="image/*" />
-      <label for="imageInput">Drag & Drop or Click to Upload</label>
-    </div>
+    <img src="../../assets/images/Qr-Code.png" alt="Tool Logo" class="tool-logo mb-3" />
+      <h1 class="display-4 fw-bold mb-3">QR Code Generator</h1>
+      <p class="lead">Enter text or a link to generate a QR code.</p>
+       <input type="text" id="qrText" placeholder="Enter text or URL" />
+    <button onclick="generateQRCode()">Generate QR</button>
 
-    <canvas id="imageCanvas" class="hidden"></canvas>
-
-    <div id="colorInfo" class="hidden">
-      <div id="colorPreview"></div>
-    <p><strong>HEX:</strong> <span id="hexValue" style="cursor:pointer;"></span></p>
-<p><strong>RGB:</strong> <span id="rgbValue" style="cursor:pointer;"></span></p>
-
-      <p id="copyMsg">Copied to clipboard!</p>
+    <center><div id="qrcode" class="qr-box"></div></center>
+    <a id="downloadBtn" class="hidden" download="qrcode.png">Download QR Code</a>
     </div>
   </div>
 <footer class="footer-colored mt-5">
@@ -149,8 +140,8 @@
   <script>
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
   </script>
-  <script src="tool17.js"></script>
-  
+  <script src="tool18.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
   <!-- ✅ Required Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
