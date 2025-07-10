@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Translator - Converter Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="tool20.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="../../index.html">ConverterTools</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tools
+            </a>
+             <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+              <li><a class="dropdown-item" href="../pdf_to_jpg/tool1.html">PDF to JPG</a></li>
+              <li><a class="dropdown-item" href="../jpg_to_pdf/tool2.html">JPG to PDF</a></li>
+              <li><a class="dropdown-item" href="../pdf_to_png/tool3.html">PDF to PNG</a></li>
+              <li><a class="dropdown-item" href="../png_to_pdf/tool4.html">PNG to PDF</a></li>
+              <li><a class="dropdown-item" href="../pdf_to_word/tool5.html">PDF to Word</a></li>
+              <li><a class="dropdown-item" href="../word_to_pdf/tool6.html">Word to PDF</a></li>
+              <li><a class="dropdown-item" href="../png_to_jpg/tool9.html">PNG to JPG</a></li>
+              <li><a class="dropdown-item" href="../jpg_to_png/tool10.html">JPG to PNG</a></li>
+              <li><a class="dropdown-item" href="../pdf_to_merge/tool7.html">PDF Merge</a></li>
+              <li><a class="dropdown-item" href="../image_compressor/tool8.html">Image compressor</a></li>
+              <li><a class="dropdown-item" href="../image_enhancement/tool11.html">Image Enhancement</a></li>
+              <li><a class="dropdown-item" href="../image-to-text/tool12.html">Image to Text</a></li>
+              <li><a class="dropdown-item" href="../html-to-pdf/tool16.html">HTML to PDF</a></li>
+              <li><a class="dropdown-item" href="../pdf-to-html/tool15.css">PDF to HTML</a></li>
+              <li><a class="dropdown-item" href="../pdf-to-excel/tool14.html">PDF to Excel</a></li>
+              <li><a class="dropdown-item" href="../excel-to-pdf/tool13.html">Excel to PDF</a></li>
+            </ul>
+          </div>
+          <a class="nav-link" href="../../pages/about.html">About Us</a>
+          <a class="nav-link" href="../../pages/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <div class="container full-page-section d-flex align-items-center justify-content-center flex-column">
+    <div class="tool-section text-center mt-2" data-aos="fade-down">
+      <img src="../../assets/images/image-translator.png" alt="Tool Logo" class="tool-logo mb-3">
+      <h1 class="display-4 fw-bold mb-3">Image Translator</h1>
+      <p class="lead">Extract and translate text from images quickly and accurately.</p>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8">
+        <div class="card file-picker p-4" data-aos="zoom-in">
+          <input type="file" id="imageInput" accept="image/*" class="d-none">
+          <div class="file-picker-content text-center">
+            <p id="filePickerText">Drag & Drop your Image here or click to upload</p>
+            <p id="fileSizeText" class="mt-2 d-none"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-3 w-100">
+      <div class="col-md-8 mx-auto">
+        <div class="progress d-none" id="loadingBar">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 0%" id="progressBar"></div>
+        </div>
+        <p id="translatedMessage" class="text-center mt-2 d-none">Translation complete below.</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-3 w-100">
+      <div class="col-md-8 d-flex justify-content-center align-items-center gap-3">
+        <button id="clearButton" class="btn btn-secondary clear-btn">Clear</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8 d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <select id="langSelect" class="form-select w-auto">
+          <option value="ur">Urdu</option>
+          <option value="hi">Hindi</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+        </select>
+        <button id="startButton" class="btn btn-primary start-btn">Start Translation</button>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4 w-100">
+      <div class="col-md-8">
+        <textarea id="extractedText" class="form-control mb-3" rows="4" placeholder="Extracted text will appear here..."></textarea>
+        <textarea id="translatedText" class="form-control" rows="4" placeholder="Translated text will appear here..."></textarea>
+      </div>
+    </div>
+  </div>
+<footer class="footer-colored mt-5">
+  <div class="container py-4">
+    <div class="row">
+
+      <!-- Tools -->
+      <div class="col-md-3 col-6 mb-3">
+        <h6 class="text-uppercase fw-bold">Tools</h6>
+        <ul class="list-unstyled">
+          <li><a href="../pdf_to_jpg/tool1.html">PDF to JPG</a></li>
+          <li><a href="../jpg_to_pdf/tool2.html">JPG to PDF</a></li>
+          <li><a href="../pdf_to_png/tool3.html">PDF to PNG</a></li>
+          <li><a href="../png_to_pdf/tool4.html">PNG to PDF</a></li>
+        </ul>
+      </div>
+
+      <!-- More Tools -->
+      <div class="col-md-3 col-6 mb-3">
+        <h6 class="text-uppercase fw-bold">More Tools</h6>
+        <ul class="list-unstyled">
+          <li><a href="../pdf_to_word/tool5.html">PDF to Word</a></li>
+          <li><a href="../word_to_pdf/tool6.html">Word to PDF</a></li>
+          <li><a href="../png_to_jpg/tool9.html">PNG to JPG</a></li>
+          <li><a href="../jpg_to_png/tool10.html">JPG to PNG</a></li>
+        </ul>
+      </div>
+
+      <!-- Smart Tools -->
+      <div class="col-md-3 col-6 mb-3">
+        <h6 class="text-uppercase fw-bold">Smart Tools</h6>
+        <ul class="list-unstyled">
+          <li><a href="../html-to-pdf/tool16.html">HTML to PDF</a></li>
+          <li><a href="../pdf-to-html/tool15.html">PDF to HTML</a></li>
+          <li><a href="../pdf-to-excel/tool14.html">PDF to Excel</a></li>
+          <li><a href="../excel-to-pdf/tool13.html">Excel to PDF</a></li>
+        </ul>
+      </div>
+
+      <!-- Company + Social -->
+      <div class="col-md-3 col-6 mb-3">
+  <h6 class="fw-bold mb-2">Follow us</h6>
+
+  <!-- Subscribe Form -->
+  <form class="d-flex mb-3">
+    <input type="email" class="form-control me-2" placeholder="Your email">
+    <button class="btn btn-success" type="submit">Subscribe</button>
+  </form>
+
+  <!-- Social Icons -->
+ <div class="d-flex align-items-center gap-3 mb-3">
+    <a href="https://www.facebook.com/" class="social-icon" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+    <a href="https://www.twitter.com/" class="social-icon" target="_blank"><i class="ri-twitter-fill"></i></a>
+    <a href="https://www.instagram.com/" class="social-icon" target="_blank"><i class="ri-instagram-fill"></i></a>
+  </div>
+
+  <div class="d-flex flex-wrap gap-3">
+    <a href="../../pages/about.html" class="text-white small" style="text-decoration: none;">About Us</a>
+    <a href="../../pages/contact.html" class="text-white small" style="text-decoration: none;">Contact</a>
+    <a href="../../pages/terms.html" class="text-white small" style="text-decoration: none;">Terms & Conditions</a>
+  </div>
+</div>
+  <!-- Inline Page Links without underline -->
+    </div>
+
+    <div class="text-center pt-3 mt-3 border-top text-white small">
+      &copy; 2025 Converter Tools - All Rights Reserved
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js" defer></script>
+<script src="tool20.js" defer></script>
+</body>
+</html>

@@ -3,6 +3,7 @@ body {
   background-color: #f1f5f9;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .qr-container {
@@ -26,12 +27,12 @@ body {
   padding: 0.75rem;
   margin-bottom: 1rem;
   border-radius: 6px;
-  border: 1px solid #cbd5e1;
-  font-size: 1rem;
   border: 2px dashed #2dd4bf;
+  font-size: 1rem;
 }
-#qrText{
-   width: 40%;
+
+#qrText {
+  width: 100%;
   padding: 10px;
   border: 2px dashed #2dd4bf;
   border-radius: 5px;
@@ -42,26 +43,27 @@ body {
   outline: none;
   transition: background-color 0.2s;
   cursor: pointer;
-} 
+  margin-bottom: 1rem;
+}
+
 button {
   background-color: #2dd4bf;
   color: white;
   padding: 0.7rem 1.2rem;
   border: none;
-  border-radius: 6px !important;
+  border-radius: 6px;
   font-weight: 600;
   cursor: pointer;
-  border-radius: 5px;
 }
 
- button:hover {
+button:hover {
   background-color: #1cc8b4;
 }
 
 .qr-box {
   margin: 2rem 0;
 }
-/* QR Input Box styled like Drag & Drop */
+
 #qrInput {
   width: 100%;
   padding: 2rem;
@@ -78,10 +80,9 @@ button {
 
 #qrInput::placeholder {
   color: #0f172a;
-  opacity: 2;
+  opacity: 1;
 }
 
-/* Hover and Focus effect */
 #qrInput:hover,
 #qrInput:focus {
   background-color: #ecfeff;
@@ -100,13 +101,13 @@ button {
 
 #downloadBtn:hover {
   color: #cbd5e1;
-  /* border: 2px dashed #1cc8b4; */
   background-color: #1cc8b4;
 }
 
 .hidden {
   display: none;
 }
+
 .tool-logo {
   height: 8rem;
   width: 8rem;
@@ -134,6 +135,7 @@ button {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
+
 .dropdown-menu .dropdown-item {
   color: #fff;
   background-color: #2dd4bf;
@@ -146,7 +148,7 @@ button {
   background-color: #1cc8b4;
   color: #fff;
 }
-/* Responsive Styling */
+
 @media (max-width: 768px) {
   .container1 {
     margin: 2rem 1rem;
@@ -169,6 +171,9 @@ button {
   .dropdown-menu {
     min-width: 100%;
   }
+  #qrText {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -182,4 +187,4 @@ button {
     width: 40px;
     height: 40px;
   }
-}                                       
+}
