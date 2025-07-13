@@ -1,4 +1,4 @@
-    .section-title {
+ .section-title {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -7,7 +7,7 @@
       color: #14b8a6;
       justify-content: center;
       margin-bottom: 10px;
-      padding: 40px 0px 0px 0px;
+      padding: 40px 0 0;
     }
 
     .section-title i {
@@ -21,11 +21,7 @@
       width: 60px;
       height: 3px;
       background-color: #00bcd4;
-      /* margin: 0  30px ; */
-      margin-bottom: 30px;
-      margin-top: auto;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto 30px auto;
     }
 
     .about-content p {
@@ -61,59 +57,60 @@
         font-size: 1.5rem;
       }
     }
+
     .footer-colored {
-  background-color: #2dd4bf !important;
-  color: #ffffff;
-  font-size: 14px;
-}
+      background-color: #2dd4bf !important;
+      color: #ffffff;
+      font-size: 14px;
+    }
 
-.footer-colored h6 {
-  color: #ffffff;
-  margin-bottom: 1rem;
-}
+    .footer-colored h6 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
 
-.footer-colored a {
-  color: #f0fdfa;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.4rem;
-  transition: color 0.3s ease;
-}
+    .footer-colored a {
+      color: #f0fdfa;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.4rem;
+      transition: color 0.3s ease;
+    }
 
-.footer-colored a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
+    .footer-colored a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
 
-.footer-colored .form-control {
-  background-color: #ffffff !important;
-  border: 1px solid #cbd5e1;
-  color: #1e293b;
-}
+    .footer-colored .form-control {
+      background-color: #ffffff !important;
+      border: 1px solid #cbd5e1;
+      color: #1e293b;
+    }
 
-.footer-colored .form-control::placeholder {
-  color: #94a3b8;
-}
+    .footer-colored .form-control::placeholder {
+      color: #94a3b8;
+    }
 
-.footer-colored .btn-success {
-  background-color: #ffffff;
-  color: #2dd4bf;
-  font-weight: 600;
-  border: none;
-}
+    .footer-colored .btn-success {
+      background-color: #ffffff;
+      color: #2dd4bf;
+      font-weight: 600;
+      border: none;
+    }
 
-.footer-colored .btn-success:hover {
-  background-color: #e0fdfa;
-}
+    .footer-colored .btn-success:hover {
+      background-color: #e0fdfa;
+    }
 
-.footer-colored .social-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
+    .footer-colored .social-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
 
-.footer-colored .social-icon:hover {
-  transform: scale(1.1);
-}
+    .footer-colored .social-icon:hover {
+      transform: scale(1.1);
+    }

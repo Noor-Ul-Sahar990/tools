@@ -1,19 +1,24 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8fafc;
+ body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8fafc;
+    }
+  .tool-logo {
+  height: 130px;
+  width: 130px;
+  object-fit: contain;
 }
 
-h1 {
-  color: #0f172a;
-}
+    h1 {
+      color: #0f172a;
+    }
 
-.card {
-  background-color: #ffffff;
-  border-radius: 10px;
-}
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+    }
 
-.list-group-item {
-  font-size: 1rem;
-  border: none;
-  padding: 12px 0;
-}
+    .list-group-item {
+      font-size: 1rem;
+      border: none;
+      padding: 12px 0;
+    }

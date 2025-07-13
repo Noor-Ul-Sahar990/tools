@@ -1,24 +1,41 @@
-window.onload = function () {
-  const loading = document.getElementById("loading");
-  const ipInfo = document.getElementById("ip-info");
+  function lookupCustomIP() {
+      const ip = document.getElementById("customIp").value.trim();
+      const name = document.getElementById("clientName").value.trim();
+      const resultDiv = document.getElementById("custom-result");
 
-  fetch("https://ipinfo.io/json?token=941bf3191d1361") // Replace with your free token
-    .then((response) => response.json())
-    .then((data) => {
-      const [city, region, country] = data.loc ? [data.city, data.region, data.country] : ["-", "-", "-"];
+      if (!ip || !name) {
+        resultDiv.innerHTML = `<div class="text-danger">Please enter both IP address and your name.</div>`;
+        return;
+      }
 
-      document.getElementById("ip").textContent = data.ip || "-";
-      document.getElementById("city").textContent = city;
-      document.getElementById("region").textContent = region;
-      document.getElementById("country").textContent = country;
-      document.getElementById("timezone").textContent = data.timezone || "-";
-      document.getElementById("org").textContent = data.org || "-";
+      resultDiv.innerHTML = `<div class="text-center"><div class="spinner-border text-primary" role="status"></div><p>Fetching data...</p></div>`;
 
-      loading.classList.add("d-none");
-      ipInfo.classList.remove("d-none");
-    })
-    .catch((error) => {
-      loading.innerHTML = `<p class="text-danger">Failed to fetch IP details. Please try again.</p>`;
-      console.error("Fetch error:", error);
-    });
-};
+      fetch(`https://ipinfo.io/${ip}/json?token=941bf3191d1361`)
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            resultDiv.innerHTML = `<div class="text-danger">Error: ${data.error.message}</div>`;
+            return;
+          }
+
+          // Remove AS number from ISP name
+          let isp = data.org || "-";
+          isp = isp.replace(/^AS\d+\s/, "");
+
+          resultDiv.innerHTML = `
+            <div class="mb-2"><strong>Name:</strong> ${name}</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><strong>IP Address:</strong> ${data.ip}</li>
+              <li class="list-group-item"><strong>City:</strong> ${data.city || "-"}</li>
+              <li class="list-group-item"><strong>Region:</strong> ${data.region || "-"}</li>
+              <li class="list-group-item"><strong>Country:</strong> ${data.country || "-"}</li>
+              <li class="list-group-item"><strong>Timezone:</strong> ${data.timezone || "-"}</li>
+              <li class="list-group-item"><strong>ISP:</strong> ${isp}</li>
+            </ul>
+          `;
+        })
+        .catch(error => {
+          resultDiv.innerHTML = `<div class="text-danger">Failed to fetch IP details.</div>`;
+          console.error(error);
+        });
+    }
