@@ -135,7 +135,14 @@
   color: #2dd4bf;
   font-weight: 500;
 }
-
+#compressButton{
+  background-color: #2dd4bf;
+  color: white;
+}
+#downloadButton{
+  background-color: #2dd4bf;
+  color: white;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .tool-section h1 {

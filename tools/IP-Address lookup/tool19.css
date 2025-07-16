@@ -11,6 +11,16 @@
     h1 {
       color: #0f172a;
     }
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #20d0b9 !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
 
     .card {
       background-color: #ffffff;

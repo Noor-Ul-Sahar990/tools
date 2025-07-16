@@ -75,6 +75,7 @@
       padding-bottom: 2rem;
     }
 
+
     .card.tool-card {
       border-radius: 16px;
       background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
@@ -114,7 +115,7 @@
     .footer-colored .form-control {
       background-color: #ffffff !important;
       border: 1px solid #cbd5e1;
-      color: #1e293b;
+      color: #2dd4bf !important;
     }
 
     .footer-colored .btn-success {
@@ -131,6 +132,24 @@
     .social-icon {
       font-size: 25px;
     }
+    .bg-teal {
+  background-color: #1abc9c;
+}
+.text-teal {
+  color: #1abc9c;
+}
+.btn1{
+  color: #2dd4bf !important;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  transition: 3s;
+}
+.btn1:hover{
+  color: #2dd4bf !important;
+  border: none;
+  background-color: #e0e0e0;
+}
     @media (max-width: 768px) {
       .navbar-brand.logo-text {
         font-size: 1.5rem;

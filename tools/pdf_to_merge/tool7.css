@@ -15,7 +15,14 @@
   font-size: 1.2rem;
   color: #64748b;
 }
-
+#mergeButton{
+  background-color: #2dd4bf;
+  color: white;
+}
+#downloadButton{
+  background-color: #2dd4bf;
+  color: white;
+}
 /* File Picker */
 .file-picker {
   border: 2px dashed #2dd4bf;

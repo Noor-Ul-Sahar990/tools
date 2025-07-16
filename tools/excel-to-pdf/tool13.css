@@ -17,19 +17,37 @@
   margin-bottom: 0.75rem;
   letter-spacing: -0.5px;
 }
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 /* Subtitle / Lead Paragraph */
 .tool-section .lead {
   font-size: 1.125rem;
-  color: #475569;
+  color: #475569 !important;
   text-align: center;
   margin-bottom: 1.5rem;
   line-height: 1.6;
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
+  color: white !important;
 }
-
+#downloadButton{
+  background-color: #2dd4bf;
+  color: white !important;
+  border: none;
+}
+#startButton{
+  background-color: #2dd4bf;
+  color: white !important;
+  border: none;
+}
 @media (max-width: 768px) {
   .tool-section h1 {
     font-size: 2.5rem;

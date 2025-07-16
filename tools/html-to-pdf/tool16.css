@@ -12,6 +12,10 @@
   font-size: 1.2rem;
   color: #64748b;
 }
+.convertButton{
+  background-color: #2dd4bf;
+  color: white;
+}
 .file-picker {
   border: 2px dashed #2dd4bf;
   background: #ffffff;

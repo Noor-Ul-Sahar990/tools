@@ -50,13 +50,30 @@
   transition: all 0.3s ease;
   overflow: auto;
 }
-
-.output-box:focus {
+.start-btn,
+.start-btn:hover,
+.start-btn:focus,
+.start-btn:active{
+  background-color: #20d0b9;
+  color: white;
+  border: none;
+}
+.output-box:active {
   border-color: #2dd4bf;
   background-color: #e6f0ff;
   box-shadow: 0 0 8px rgba(180, 243, 255, 0.5);
   outline: none;
 }
+.download-btn,
+.download-btn:hover,
+.download-btn:focus,
+.download-btn:active {
+  background-color: #20d0b9 !important;
+  color: white !important;
+  border-color: #20d0b9 !important; /* Optional */
+  box-shadow: none !important; /* Bootstrap ki default blue shadow hatane ke liye */
+}
+
 .output-box:hover{
     border-color: #2dd4bf;
   background-color: #e6f0ff;

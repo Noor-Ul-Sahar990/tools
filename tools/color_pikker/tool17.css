@@ -4,7 +4,9 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.btn{
+  color: #2dd4bf !important;
+}
 .tool-logo {
   height: 6rem;
   width: 6rem;
