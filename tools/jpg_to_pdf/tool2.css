@@ -193,7 +193,21 @@
 .footer-colored .form-control::placeholder {
   color: #94a3b8;
 }
+#downloadButton {
+  background-color: #2dd4bf;
+  border: none;
+}
 
+#downloadButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+#downloadButton:not(:disabled):hover {
+  background-color: #2dd4bf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 .footer-colored .btn-success {
   background-color: #ffffff;
   color: #2dd4bf;
@@ -216,4 +230,8 @@
 }
 .social-icon a{
   text-decoration: none;
+}
+#downloadButton{
+  background-color: #2dd4bf;
+  color: white;
 }

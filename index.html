@@ -1,348 +1,815 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Convert PDF, Word, Excel, Images, and more with ease using Converter Tools. Fast, secure, and free file conversion.">
-  <meta name="keywords" content="PDF to JPG, JPG to PDF, PDF to PNG, PDF converter, Word to PDF, Excel to PDF, Image converter">
-  <meta name="author" content="Converter Tools">
-  <link rel="canonical" href="https://www.yourdomain.com/">
-  <title>Converter Tools Home - Free Online File Converters</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-    <div class="container">
-      <a class="navbar-brand logo-text" href="index.html">ConverterTools</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav ms-auto">
-          <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Tools
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
-              <li><a class="dropdown-item" href="tools/pdf_to_jpg/tool1.html">PDF to JPG</a></li>
-              <li><a class="dropdown-item" href="tools/jpg_to_pdf/tool2.html">JPG to PDF</a></li>
-              <li><a class="dropdown-item" href="tools/pdf_to_png/tool3.html">PDF to PNG</a></li>
-              <li><a class="dropdown-item" href="tools/png_to_pdf/tool4.html">PNG to PDF</a></li>
-              <li><a class="dropdown-item" href="tools/pdf_to_word/tool5.html">PDF to Word</a></li>
-              <li><a class="dropdown-item" href="tools/word_to_pdf/tool6.html">Word to PDF</a></li>
-              <li><a class="dropdown-item" href="tools/png_to_jpg/tool9.html">PNG to JPG</a></li>
-              <li><a class="dropdown-item" href="tools/jpg_to_png/tool10.html">JPG to PNG</a></li>
-              <li><a class="dropdown-item" href="tools/pdf_to_merge/tool7.html">PDF Merge</a></li>
-              <li><a class="dropdown-item" href="tools/image_compressor/tool8.html">Image compressor</a></li>
-              <li><a class="dropdown-item" href="tools/image_enhancement/tool11.html">Image Enhancement</a></li>
-              <li><a class="dropdown-item" href="tools/image-to-text/tool12.html">Image to Text</a></li>
-              <li><a class="dropdown-item" href="tools/html-to-pdf/tool16.html">HTML to PDF</a></li>
-              <li><a class="dropdown-item" href="tools/pdf-to-html/tool15.css">PDF to HTML</a></li>
-              <li><a class="dropdown-item" href="tools/pdf-to-excel/tool14.html">PDF to Excel</a></li>
-              <li><a class="dropdown-item" href="tools/excel-to-pdf/tool13.html">Excel to PDF</a></li>
-              <li><a class="dropdown-item" href="tools/color_pikker/tool17.html">Color Pikker</a></li>
-              <li><a class="dropdown-item" href="tools/IP-Address lookup/tool19.html">IP Address Lookup</a></li>
-              <li><a class="dropdown-item" href="tools/QR code generator/tool18.html">QR Generator</a></li>
-              <li><a class="dropdown-item" href="tools/Image_Translator/tool20.html">Image Translator</a></li>
-            </ul>
-          </div>
-          <a class="nav-link" href="pages/about.html">About Us</a>
-          <a class="nav-link" href="pages/contact.html">Contact</a>
+    <!-- Primary Meta Tags -->
+    <title>
+      Free Online File Converters - PDF, Word, Excel, JPG & More | Converter
+      Tools
+    </title>
+    <meta
+      name="description"
+      content="Convert PDF, Word, Excel, JPG, PNG, and more using fast, secure & free online tools. No signup required."
+    />
+    <meta
+      name="keywords"
+      content="PDF to JPG, JPG to PDF, Word to PDF, Excel to PDF, PDF to Word, image to text, file converter online, free file tools"
+    />
+    <meta name="author" content="Converter Tools" />
+    <link rel="canonical" href="https://tools-zeta-flame.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Free Online File Converters – Convert PDF, Word, JPG & More"
+    />
+    <meta
+      property="og:description"
+      content="Free online tools to convert files like PDF, Word, Excel, JPG, and more. Fast, secure, no installation needed."
+    />
+    <meta property="og:url" content="https://tools-zeta-flame.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://tools-zeta-flame.vercel.app/assets/images/seo-thumbnail.jpg"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Free Online File Converters – Convert PDF, Word, JPG & More"
+    />
+    <meta
+      name="twitter:description"
+      content="Fast, free, secure file converters for PDF, Word, Excel, JPG, PNG and more – all in your browser."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tools-zeta-flame.vercel.app/assets/images/seo-thumbnail.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Converter Tools",
+        "url": "https://tools-zeta-flame.vercel.app/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://tools-zeta-flame.vercel.app/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand logo-text"
+          href="index.html"
+          title="Go to ConverterTools Homepage"
+          >ConverterTools</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="toolsDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                title="View all file converter tools"
+              >
+                Tools
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/pdf_to_jpg/tool1.html"
+                    title="Convert PDF to JPG"
+                    >PDF to JPG</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/jpg_to_pdf/tool2.html"
+                    title="Convert JPG to PDF"
+                    >JPG to PDF</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/pdf_to_png/tool3.html"
+                    title="Convert PDF to PNG"
+                    >PDF to PNG</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/png_to_pdf/tool4.html"
+                    title="Convert PNG to PDF"
+                    >PNG to PDF</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/pdf_to_word/tool5.html"
+                    title="Convert PDF to Word"
+                    >PDF to Word</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/word_to_pdf/tool6.html"
+                    title="Convert Word to PDF"
+                    >Word to PDF</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/png_to_jpg/tool9.html"
+                    title="Convert PNG to JPG"
+                    >PNG to JPG</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/jpg_to_png/tool10.html"
+                    title="Convert JPG to PNG"
+                    >JPG to PNG</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/pdf_to_merge/tool7.html"
+                    title="Merge PDF Files"
+                    >PDF Merge</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/image_compressor/tool8.html"
+                    title="Compress Image Files"
+                    >Image Compressor</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/image_enhancement/tool11.html"
+                    title="Enhance Image Quality"
+                    >Image Enhancement</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/image-to-text/tool12.html"
+                    title="Extract Text from Images"
+                    >Image to Text</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/html-to-pdf/tool16.html"
+                    title="Convert HTML to PDF"
+                    >HTML to PDF</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/pdf-to-html/tool15.html"
+                    title="Convert PDF to HTML"
+                    >PDF to HTML</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/pdf-to-excel/tool14.html"
+                    title="Convert PDF to Excel"
+                    >PDF to Excel</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/excel-to-pdf/tool13.html"
+                    title="Convert Excel to PDF"
+                    >Excel to PDF</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/color_pikker/tool17.html"
+                    title="Pick Colors from Images"
+                    >Color Picker</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/IP-Address lookup/tool19.html"
+                    title="Check IP Address Info"
+                    >IP Address Lookup</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/QR code generator/tool18.html"
+                    title="Create QR Codes Online"
+                    >QR Generator</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="tools/Image_Translator/tool20.html"
+                    title="Translate Text in Images"
+                    >Image Translator</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Static Links -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="pages/about.html"
+                title="Learn more about ConverterTools"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="pages/contact.html"
+                title="Contact the ConverterTools team"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container website-info text-center mt-5" data-aos="fade-down">
+      <img
+        src="assets/images/tool-icon-placeholder.png"
+        alt="Website Icon"
+        class="website-icon mb-3"
+      />
+      <h1 class="display-4 fw-bold mb-3">Converter Tools</h1>
+      <p class="lead">
+        Your one-stop solution for all conversion needs. Convert files, images,
+        texts, and more with ease and efficiency.
+      </p>
+    </div>
+
+    <div class="container tools-section mt-5">
+      <div class="row" data-aos="zoom-in">
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/pdf_to_jpg/tool1.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/pdf-to-jpg.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PDF to JPG</h5>
+            <p class="card-text text-center">
+              Convert your PDF files to high-quality JPG images.
+            </p>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/jpg_to_pdf/tool2.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/jpg-to-pdf.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">JPG to PDF</h5>
+            <p class="card-text text-center">
+              Convert your JPG images to PDF files effortlessly
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/pdf_to_png/tool3.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/pdf-to-png.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PDF to PNG</h5>
+            <p class="card-text text-center">
+              Convert your PDF files to high-quality PNG images effortlessly.
+            </p>
+          </a>
+        </div>
+        <!--  -->
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/png_to_pdf/tool4.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/png-to-pdf.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PNG to PDF</h5>
+            <p class="card-text text-center">
+              Easily convert your PNG images to PDF files in just a few clicks.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/pdf_to_word/tool5.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/pdf-to-word.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PDF to Word</h5>
+            <p class="card-text text-center">
+              Convert your PDF files to editable Word documents with ease and
+              precision.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/word_to_pdf/tool6.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/word to pdf.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Word to PDF</h5>
+            <p class="card-text text-center">
+              Transform your Word documents into PDF files with high fidelity.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/png_to_jpg/tool9.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/png-to-jpg.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PNG to JPG</h5>
+            <p class="card-text text-center">
+              Easily convert your PNG image to JPG file in just a few clicks.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/jpg_to_png/tool10.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/jpg-to-png.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">JPG to PNG</h5>
+            <p class="card-text text-center">
+              Easily convert your JPG image to PNG file in just a few clicks.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/pdf-to-excel/tool14.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/pdf to excel.PNG"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PDF to Excel</h5>
+            <p class="card-text text-center">
+              Convert your PDF documents to Excel files easily and accurately.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/excel-to-pdf/tool13.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/excel-to-pdf.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Excel to PDF</h5>
+            <p class="card-text text-center">
+              Convert your Excel files to PDF documents with ease and accuracy.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/html-to-pdf/tool16.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/html-to-pdf.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">HTML to PDF</h5>
+            <p class="card-text text-center">
+              Convert your HTML files to PDF documents instantly.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/pdf-to-html/too15.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/pdf-to-html.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PDF to HTML</h5>
+            <p class="card-text text-center">
+              Extract readable HTML from your PDF files in seconds.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/pdf_to_merge/tool7.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/PDF Merge.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">PDF Merger</h5>
+            <p class="card-text text-center">
+              Combine multiple PDF files into a single PDF with ease.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/image_compressor/tool8.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/Image-compression-tool.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Image Compressor</h5>
+            <p class="card-text text-center">
+              Compress your images with high quality and ease.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/image_enhancement/tool11.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/image-enhance.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Image Enhancement</h5>
+            <p class="card-text text-center">
+              Enhance your images and compare with the original.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/image-to-text/tool12.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/image-to-text.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Image to Text</h5>
+            <p class="card-text text-center">
+              Upload an image and extract text from it instantly.
+            </p>
+          </a>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/color_pikker/tool17.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/color-piiker.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Color Pikker</h5>
+            <p class="card-text text-center">
+              Upload an image and click anywhere to pick a color
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/IP-Address lookup/tool19.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/ip_address_lookup.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">IP Address Lookup</h5>
+            <p class="card-text text-center">
+              Enter an IP address to see its location and ISP.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/QR code generator/tool18.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/Qr-Code.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">QR Code Generator</h5>
+            <p class="card-text text-center">
+              Enter text or a link to generate a QR code.
+            </p>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-12 mb-5">
+          <a
+            href="tools/Image_Translator/tool20.html"
+            class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none"
+          >
+            <img
+              src="assets/images/image-translator.png"
+              alt="Tool Icon"
+              class="tool-icon mb-3"
+            />
+            <h5 class="card-title fw-bold">Image Translator</h5>
+            <p class="card-text text-center">
+              Extract and translate text from images quickly and accurately.
+            </p>
+          </a>
         </div>
       </div>
     </div>
-  </nav>
-
-  <div class="container website-info text-center mt-5" data-aos="fade-down">
-    <img src="assets/images/tool-icon-placeholder.png" alt="Website Icon" class="website-icon mb-3">
-    <h1 class="display-4 fw-bold mb-3">Converter Tools</h1>
-    <p class="lead">Your one-stop solution for all conversion needs. Convert files, images, texts, and more with ease
-      and efficiency.</p>
-  </div>
-
-  <div class="container tools-section mt-5">
-    <div class="row" data-aos="zoom-in">
-
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/pdf_to_jpg/tool1.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/pdf-to-jpg.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">PDF to JPG</h5>
-          <p class="card-text text-center">Convert your PDF files to high-quality JPG images.</p>
-        </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/jpg_to_pdf/tool2.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/jpg-to-pdf.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">JPG to PDF</h5>
-          <p class="card-text text-center">Convert your JPG images to PDF files effortlessly</p>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/pdf_to_png/tool3.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/pdf-to-png.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">PDF to PNG</h5>
-          <p class="card-text text-center">Convert your PDF files to high-quality PNG images effortlessly.</p>
-        </a>
-      </div>
-      <!--  -->
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/png_to_pdf/tool4.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/png-to-pdf.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">PNG to PDF</h5>
-          <p class="card-text text-center">Easily convert your PNG images to PDF files in just a few clicks.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/pdf_to_word/tool5.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/pdf-to-word.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">PDF to Word</h5>
-          <p class="card-text text-center">Convert your PDF files to editable Word documents with ease and precision.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/word_to_pdf/tool6.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/word to pdf.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">Word to PDF</h5>
-          <p class="card-text text-center">Transform your Word documents into PDF files with high fidelity.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/png_to_jpg/tool9.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/png-to-jpg.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">PNG to JPG</h5>
-          <p class="card-text text-center">Easily convert your PNG image to JPG file in just a few clicks.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/jpg_to_png/tool10.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/jpg-to-png.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">JPG to PNG</h5>
-          <p class="card-text text-center">Easily convert your JPG image to PNG file in just a few clicks.</p>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-              <a href="tools/pdf-to-excel/tool14.html"
-              class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-              <img src="assets/images/pdf to excel.PNG" alt="Tool Icon" class="tool-icon mb-3">
-              <h5 class="card-title fw-bold">PDF to Excel</h5>
-              <p class="card-text text-center">Convert your PDF documents to Excel files easily and accurately.</p>
-            </a>
+    <div class="gap-section-bottom"></div>
+    <footer class="footer-colored mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <!-- Tools -->
+          <div class="col-md-3 col-6 mb-3">
+            <h6 class="text-uppercase fw-bold">Tools</h6>
+            <ul class="list-unstyled">
+              <li><a href="tools/pdf_to_jpg/tool1.html">PDF to JPG</a></li>
+              <li><a href="tools/jpg_to_pdf/tool2.html">JPG to PDF</a></li>
+              <li><a href="tools/pdf_to_png/tool3.html">PDF to PNG</a></li>
+              <li><a href="tools/png_to_pdf/tool4.html">PNG to PDF</a></li>
+            </ul>
           </div>
-          <div class="col-md-3 col-sm-6 col-12 mb-5">
-                 <a href="tools/excel-to-pdf/tool13.html"
-                   class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-                   <img src="assets/images/excel-to-pdf.png" alt="Tool Icon" class="tool-icon mb-3">
-                   <h5 class="card-title fw-bold">Excel to PDF</h5>
-                   <p class="card-text text-center">Convert your Excel files to PDF documents with ease and accuracy.</p>
-                 </a>
-               </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/html-to-pdf/tool16.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/html-to-pdf.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">HTML to PDF</h5>
-          <p class="card-text text-center">Convert your HTML files to PDF documents instantly.</p>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/pdf-to-html/too15.html"
-        class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-        <img src="assets/images/pdf-to-html.png" alt="Tool Icon" class="tool-icon mb-3">
-        <h5 class="card-title fw-bold">PDF to HTML</h5>
-        <p class="card-text text-center">Extract readable HTML from your PDF files in seconds.</p>
-      </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/pdf_to_merge/tool7.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/PDF Merge.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">PDF Merger</h5>
-          <p class="card-text text-center">Combine multiple PDF files into a single PDF with ease.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/image_compressor/tool8.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/Image-compression-tool.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">Image Compressor</h5>
-          <p class="card-text text-center">Compress your images with high quality and ease.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/image_enhancement/tool11.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/image-enhance.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">Image Enhancement</h5>
-          <p class="card-text text-center">Enhance your images and compare with the original.</p>
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12 mb-5">
-             <a href="tools/image-to-text/tool12.html"
-               class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-               <img src="assets/images/image-to-text.png" alt="Tool Icon" class="tool-icon mb-3">
-               <h5 class="card-title fw-bold">Image to Text</h5>
-               <p class="card-text text-center">Upload an image and extract text from it instantly.</p>
-              </a>
+
+          <!-- More Tools -->
+          <div class="col-md-3 col-6 mb-3">
+            <h6 class="text-uppercase fw-bold">More Tools</h6>
+            <ul class="list-unstyled">
+              <li><a href="tools/pdf_to_word/tool5.html">PDF to Word</a></li>
+              <li><a href="tools/word_to_pdf/tool6.html">Word to PDF</a></li>
+              <li><a href="tools/png_to_jpg/tool9.html">PNG to JPG</a></li>
+              <li><a href="tools/jpg_to_png/tool10.html">JPG to PNG</a></li>
+            </ul>
+          </div>
+
+          <!-- Smart Tools -->
+          <div class="col-md-3 col-6 mb-3">
+            <h6 class="text-uppercase fw-bold">Smart Tools</h6>
+            <ul class="list-unstyled">
+              <li><a href="tools/pdf-to-excel/tool14.html">PDF to Excel</a></li>
+              <li><a href="tools/excel-to-pdf/tool13.html">Excel to PDF</a></li>
+              <li><a href="tools/html-to-pdf/tool16.html">HTML to PDF</a></li>
+              <li><a href="tools/pdf-to-html/tool15.html">PDF to HTML</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6 mb-3">
+            <h6 class="text-uppercase fw-bold">powerful Tools</h6>
+            <ul class="list-unstyled">
+              <li><a href="tools/pdf_to_merge/tool7.html">PdF Merger</a></li>
+              <li>
+                <a href="tools/image_compressor/tool8.html">Image Compressor</a>
+              </li>
+              <li>
+                <a href="tools/image_enhancement/tool11.html"
+                  >Image Enhancement</a
+                >
+              </li>
+              <li>
+                <a href="tools/image-to-text/tool12.html">Image to Text</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6 mb-3">
+            <h6 class="text-uppercase fw-bold">Utility Tools</h6>
+            <ul class="list-unstyled">
+              <li><a href="tools/color_pikker/tool17.html">Color Pikker</a></li>
+              <li>
+                <a href="tools/IP-Address lookup/tool19.html"
+                  >IP Address Lookup</a
+                >
+              </li>
+              <li>
+                <a href="tools/QR code generator/tool18.html">QR Generator</a>
+              </li>
+              <li>
+                <a href="tools/Image_Translator/tool20.html"
+                  >Image Translator</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Company + Social -->
+          <div class="col-md-3 col-6 mb-3">
+            <h6 class="fw-bold mb-2">Follow us</h6>
+            <!-- Subscribe Form -->
+            <form class="d-flex mb-3">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Your email"
+              />
+              <button class="btn btn-success" type="submit">Subscribe</button>
+            </form>
+
+            <!-- Social Icons -->
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <a
+                href="https://www.facebook.com/"
+                class="social-icon"
+                target="_blank"
+                ><i class="ri-facebook-circle-fill"></i
+              ></a>
+              <a
+                href="https://www.twitter.com/"
+                class="social-icon"
+                target="_blank"
+                ><i class="ri-twitter-fill"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/"
+                class="social-icon"
+                target="_blank"
+                ><i class="ri-instagram-fill"></i
+              ></a>
             </div>
-            
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/color_pikker/tool17.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/color-piiker.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">Color Pikker</h5>
-          <p class="card-text text-center">Upload an image and click anywhere to pick a color</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/IP-Address lookup/tool19.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/ip_address_lookup.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">IP Address Lookup</h5>
-          <p class="card-text text-center">Enter an IP address to see its location and ISP.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/QR code generator/tool18.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/Qr-Code.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">QR Code Generator</h5>
-          <p class="card-text text-center">Enter text or a link to generate a QR code.</p>
-        </a>
-      </div>
- <div class="col-md-3 col-sm-6 col-12 mb-5">
-        <a href="tools/Image_Translator/tool20.html"
-          class="card tool-card d-flex flex-column align-items-center p-4 text-decoration-none">
-          <img src="assets/images/image-translator.png" alt="Tool Icon" class="tool-icon mb-3">
-          <h5 class="card-title fw-bold">Image Translator</h5>
-          <p class="card-text text-center">Extract and translate text from images quickly and accurately.</p>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="gap-section-bottom"></div>
-<footer class="footer-colored mt-5">
-  <div class="container py-4">
-    <div class="row">
 
-      <!-- Tools -->
-      <div class="col-md-3 col-6 mb-3">
-        <h6 class="text-uppercase fw-bold">Tools</h6>
-        <ul class="list-unstyled">
-          <li><a href="tools/pdf_to_jpg/tool1.html">PDF to JPG</a></li>
-          <li><a href="tools/jpg_to_pdf/tool2.html">JPG to PDF</a></li>
-          <li><a href="tools/pdf_to_png/tool3.html">PDF to PNG</a></li>
-          <li><a href="tools/png_to_pdf/tool4.html">PNG to PDF</a></li>
-        </ul>
+            <div class="d-flex flex-wrap gap-3">
+              <a
+                href="pages/about.html"
+                class="text-white small"
+                style="text-decoration: none"
+                >About Us</a
+              >
+              <a
+                href="pages/contact.html"
+                class="text-white small"
+                style="text-decoration: none"
+                >Contact</a
+              >
+              <a
+                href="pages/terms.html"
+                class="text-white small"
+                style="text-decoration: none"
+                >Terms & Conditions</a
+              >
+            </div>
+          </div>
+          <!-- Inline Page Links without underline -->
+        </div>
+
+        <div class="text-center pt-3 mt-3 border-top text-white small">
+          &copy; 2025 Converter Tools - All Rights Reserved
+        </div>
       </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      AOS.init();
 
-      <!-- More Tools -->
-      <div class="col-md-3 col-6 mb-3">
-        <h6 class="text-uppercase fw-bold">More Tools</h6>
-        <ul class="list-unstyled">
-          <li><a href="tools/pdf_to_word/tool5.html">PDF to Word</a></li>
-          <li><a href="tools/word_to_pdf/tool6.html">Word to PDF</a></li>
-          <li><a href="tools/png_to_jpg/tool9.html">PNG to JPG</a></li>
-          <li><a href="tools/jpg_to_png/tool10.html">JPG to PNG</a></li>
-        </ul>
-      </div>
-
-      <!-- Smart Tools -->
-      <div class="col-md-3 col-6 mb-3">
-        <h6 class="text-uppercase fw-bold">Smart Tools</h6>
-        <ul class="list-unstyled">
-          <li><a href="tools/pdf-to-excel/tool14.html">PDF to Excel</a></li>
-          <li><a href="tools/excel-to-pdf/tool13.html">Excel to PDF</a></li>
-          <li><a href="tools/html-to-pdf/tool16.html">HTML to PDF</a></li>
-          <li><a href="tools/pdf-to-html/tool15.html">PDF to HTML</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-6 mb-3">
-        <h6 class="text-uppercase fw-bold">powerful Tools</h6>
-        <ul class="list-unstyled">
-          <li><a href="tools/pdf_to_merge/tool7.html">PdF Merger</a></li>
-          <li><a href="tools/image_compressor/tool8.html">Image Compressor</a></li>
-          <li><a href="tools/image_enhancement/tool11.html">Image Enhancement</a></li>
-          <li><a href="tools/image-to-text/tool12.html">Image to Text</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3 col-6 mb-3">
-        <h6 class="text-uppercase fw-bold">Utility Tools</h6>
-        <ul class="list-unstyled">
-          <li><a href="tools/color_pikker/tool17.html">Color Pikker</a></li>
-          <li><a href="tools/IP-Address lookup/tool19.html">IP Address Lookup</a></li>
-          <li><a href="tools/QR code generator/tool18.html">QR Generator</a></li>
-          <li><a href="tools/Image_Translator/tool20.html">Image Translator</a></li>
-        </ul>
-      </div>
-      <!-- Company + Social -->
-      <div class="col-md-3 col-6 mb-3">
-  <h6 class="fw-bold mb-2">Follow us</h6>
-  <!-- Subscribe Form -->
-  <form class="d-flex mb-3">
-    <input type="email" class="form-control me-2" placeholder="Your email">
-    <button class="btn btn-success" type="submit">Subscribe</button>
-  </form>
-
-  <!-- Social Icons -->
- <div class="d-flex align-items-center gap-3 mb-3">
-    <a href="https://www.facebook.com/" class="social-icon" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
-    <a href="https://www.twitter.com/" class="social-icon" target="_blank"><i class="ri-twitter-fill"></i></a>
-    <a href="https://www.instagram.com/" class="social-icon" target="_blank"><i class="ri-instagram-fill"></i></a>
-  </div>
-
-  <div class="d-flex flex-wrap gap-3">
-    <a href="pages/about.html" class="text-white small" style="text-decoration: none;">About Us</a>
-    <a href="pages/contact.html" class="text-white small" style="text-decoration: none;">Contact</a>
-    <a href="pages/terms.html" class="text-white small" style="text-decoration: none;">Terms & Conditions</a>
-  </div>
-</div>
-  <!-- Inline Page Links without underline -->
-    </div>
-
-    <div class="text-center pt-3 mt-3 border-top text-white small">
-      &copy; 2025 Converter Tools - All Rights Reserved
-    </div>
-  </div>
-</footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/app.js"></script>
-   <script>
-    AOS.init();
-
-    // Show success message without reloading
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-      fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          document.getElementById('successMsg').style.display = 'block';
-          form.reset();
-        }
+      // Show success message without reloading
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: {
+            Accept: "application/json",
+          },
+        }).then((response) => {
+          if (response.ok) {
+            document.getElementById("successMsg").style.display = "block";
+            form.reset();
+          }
+        });
       });
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>

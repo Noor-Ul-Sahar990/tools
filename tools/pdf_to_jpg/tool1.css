@@ -88,7 +88,7 @@
 }
 
 .download-btn {
-  background-color: #22c55e;
+  background-color: #2dd4bf;
   border: none;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .download-btn:not(:disabled):hover {
-  background-color: #16a34a;
+  background-color: #2dd4bf;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

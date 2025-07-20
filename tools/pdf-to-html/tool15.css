@@ -58,7 +58,21 @@
 .download-btn:disabled {
   background-color: #9ca3af;
 }
+#downloadButton {
+  background-color: #2dd4bf !important;
+  border: none !important;
+}
 
+#downloadButton:disabled {
+  background-color: #9ca3af !important;
+  cursor: not-allowed !important;
+}
+
+#downloadButton:not(:disabled):hover {
+  background-color: #2dd4bf !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
 .html-preview {
   background-color: #f1f5f9;
   max-height: 400px;

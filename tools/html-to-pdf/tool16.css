@@ -16,6 +16,10 @@
   background-color: #2dd4bf;
   color: white;
 }
+#convertButton{
+  background-color: #2dd4bf;
+  color: white;
+}
 .file-picker {
   border: 2px dashed #2dd4bf;
   background: #ffffff;
@@ -73,4 +77,19 @@
   text-align: left;
   font-size: 14px;
   color: #1e293b;
+}
+#downloadButton {
+  background-color: #2dd4bf;
+  border: none;
+}
+
+#downloadButton:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+#downloadButton:not(:disabled):hover {
+  background-color: #2dd4bf;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
