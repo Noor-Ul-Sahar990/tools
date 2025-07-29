@@ -1,0 +1,92 @@
+body {
+  background-color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tool-logo {
+  height: 8rem;
+  width: 8rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.container1 {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.upload-box {
+  border: 2px dashed #2dd4bf;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  color: #0f172a;
+  transition: background-color 0.3s ease;
+}
+
+.upload-box:hover {
+  background-color: #ecfeff;
+}
+
+#startBtn, #stopBtn {
+  margin-top: 1rem;
+  background-color: #2dd4bf;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#stopBtn {
+  background-color: #ef4444;
+  margin-left: 10px;
+}
+
+#startBtn:hover {
+  background-color: #1cc8b4;
+}
+
+#stopBtn:hover {
+  background-color: #dc2626;
+}
+
+#colorInfo {
+  margin-top: 1.5rem;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+#transcribedText {
+  white-space: pre-wrap;
+  color: #111827;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  min-height: 100px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+#copyMsg {
+  color: green;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.hidden {
+  display: none;
+}

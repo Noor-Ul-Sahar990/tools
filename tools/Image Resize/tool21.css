@@ -1,129 +1,177 @@
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f9fafb;
-  color: #1e293b;
-  min-height: 100vh;
-}
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #1e293b;
+    min-height: 100vh;
+  }
 
-.tool-logo {
-  height: 80px;
-  width: 80px;
-  object-fit: contain;
-}
+  .tool-logo {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+  }
 
-.tool-section h1 {
-  font-weight: 800;
-}
-
-.tool-section .lead {
-  font-size: 1.2rem;
-  color: #64748b;
-}
-
-.file-picker {
-  background: #ffffff;
-  transition: background 0.3s ease, border-color 0.3s ease;
-  user-select: none;
-}
-
-.file-picker.dragover {
-  border-color: #14b8a6 !important;
-  background: #e0f2f1;
-}
-#filePicker{
-  border: 2px dashed #14b8a6 !important;
-  width: 400px !important;
-}
-#filePickerText {
-  font-size: 1.1rem;
-  color: #64748b;
-}
-
-input[type='number'] {
-  border-radius: 8px;
-  border: 1px solid #cbd5e1;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  width: 200px;
-}
-
-.start-btn,
-.download-btn,
-.clear-btn {
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-
-.start-btn {
-  background-color: #2dd4bf;
-  border: none;
-  color: #fff;
-}
-
-.start-btn:hover {
-  background-color: #14b8a6;
-}
-
-.download-btn {
-  background-color: #22c55e;
-  border: none;
-  color: #fff;
-}
-
-.download-btn:disabled {
-  background-color: #9ca3af;
-  cursor: not-allowed;
-}
-
-.download-btn:not(:disabled):hover {
-  background-color: #16a34a;
-}
-
-.clear-btn {
-  background-color: #6b7280;
-  border: none;
-  color: #fff;
-}
-
-.clear-btn:hover {
-  background-color: #4b5563;
-}
-
-.footer-colored {
-  background-color: #2dd4bf !important;
-  color: #fff;
-  font-size: 14px;
-}
-
-@media (max-width: 768px) {
   .tool-section h1 {
-    font-size: 2rem;
+    font-weight: 800;
   }
+
   .tool-section .lead {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    color: #64748b;
   }
+
   .file-picker {
-    min-height: 150px !important;
+    background: #ffffff;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    user-select: none;
+    border: 2px dashed #14b8a6 !important;
+    width: 100%;
+    max-width: 400px;
+    min-height: 180px;
+    margin: 0 auto;
+    padding: 1rem;
   }
+
+  .file-picker.dragover {
+    border-color: dashed #14b8a6 !important;
+    background: #e0f2f1;
+  }
+
   #filePickerText {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #64748b;
+    text-align: center;
   }
+
   input[type='number'] {
-    width: 100% !important;
-    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
+    margin: 0.5rem auto;
+    display: block;
   }
+
   .start-btn,
   .download-btn,
   .clear-btn {
-    width: 100%;
-    margin: 0.5rem 0;
-    padding: 0.75rem;
-    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
   }
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
+
+  .start-btn {
+    background-color: #2dd4bf;
+    border: none;
+    color: #fff;
   }
-}
+
+  .start-btn:hover {
+    background-color: #14b8a6;
+  }
+
+  .download-btn {
+    background-color: #22c55e;
+    border: none;
+    color: #fff;
+  }
+
+  .download-btn:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+
+  .download-btn:not(:disabled):hover {
+    background-color: #16a34a;
+  }
+
+  .clear-btn {
+    background-color: #6b7280;
+    border: none;
+    color: #fff;
+  }
+
+  .clear-btn:hover {
+    background-color: #4b5563;
+  }
+
+  .footer-colored {
+    background-color: #2dd4bf !important;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .tool-logo {
+      height: 60px;
+      width: 60px;
+    }
+
+    .tool-section h1 {
+      font-size: 1.8rem;
+    }
+
+    .tool-section .lead {
+      font-size: 1rem;
+    }
+
+    .file-picker {
+      min-height: 150px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    #filePickerText {
+      font-size: 1rem;
+    }
+
+    input[type='number'] {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .start-btn,
+    .download-btn,
+    .clear-btn {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .d-flex.flex-md-row {
+      flex-direction: column !important;
+    }
+
+    .footer-colored .col-md-3 {
+      width: 50%;
+      margin-bottom: 1rem;
+    }
+
+    .footer-colored .d-flex.flex-wrap {
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .tool-section h1 {
+      font-size: 1.5rem;
+    }
+
+    .footer-colored .col-md-3 {
+      width: 100%;
+    }
+
+    .file-picker {
+      padding: 1rem;
+    }
+  }
