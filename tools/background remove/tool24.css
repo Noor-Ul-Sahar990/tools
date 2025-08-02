@@ -1,0 +1,152 @@
+body {
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      font-family: 'Segoe UI', sans-serif;
+      animation: fadeInBody 1s ease-in;
+    }
+.tool-logo {
+  height: 8rem;
+  width: 8rem;
+  object-fit: contain;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+    .tool-section {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 30px;
+      border: 2px solid #e0e0e0;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      animation: slideUp 1.2s ease-out;
+    }
+
+    .file-picker {
+      border: 2px dashed #2dd4bf;
+      border-radius: 10px;
+      padding: 40px 20px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      background-color: #ffffff;
+      color: #495057;
+      animation: bounceIn 1.3s ease;
+    }
+
+    .file-picker:hover {
+      background-color: #f8f9fa;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(45, 212, 191, 0.3);
+    }
+    #removeBgBtn{
+        background-color: #2dd4bf !important;
+        color: #fff;
+        border: none;
+    }
+    #downloadBtn{
+        background-color: #2dd4bf !important;
+        color: #fff;
+        border: none;
+    }
+    #preview img, #resultImage {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 20px;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    .btn-custom {
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 10px;
+      transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeInButtons 1.5s ease-in;
+    }
+
+    .btn-custom::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(45, 212, 191, 0.15);
+      transition: all 0.4s ease-in-out;
+      z-index: 0;
+    }
+
+    .btn-custom:hover::before {
+      left: 0;
+    }
+
+    .btn-custom span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn-primary {
+      background-color: #2dd4bf;
+      border: 2px solid #2dd4bf;
+    }
+
+    .btn-primary:hover {
+      background-color: #2dd4bf;
+      border-color: #2dd4bf;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(45, 212, 191, 0.6);
+    }
+
+    .btn-success {
+      background-color: #2dd4bf;
+      border: 2px solid #2dd4bf;
+    }
+
+    .btn-success:hover {
+      background-color: #2dd4bf;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(45, 212, 191, 0.6);
+    }
+
+    .btn-remove-bg {
+      background-color: #2dd4bf;
+      border: 2px solid #2dd4bf;
+    }
+
+    .btn-remove-bg:hover {
+      background-color: #2dd4bf;
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(45, 212, 191, 0.7);
+    }
+
+    .spinner-border-sm { margin-left: 10px; }
+    #output-image { display: none; animation: fadeIn 1s ease; }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeInButtons {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInBody {
+      from { background-color: #fff; opacity: 0; }
+      to { background: linear-gradient(135deg, #e0f7fa, #f1f8e9); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
