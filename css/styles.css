@@ -190,3 +190,16 @@
         align-items: flex-start;
       }
     }
+.card {
+  border: 1px solid transparent;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.card:hover {
+  border: 1px dashed #2dd4bf;
+  background-color: #f0fdfa;
+  box-shadow: 0 0 20px rgba(45, 212, 191, 0.6); /* Teal glow */
+}
