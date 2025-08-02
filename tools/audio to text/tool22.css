@@ -29,6 +29,7 @@ body {
   margin-bottom: 1rem;
   color: #0f172a;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .upload-box:hover {
