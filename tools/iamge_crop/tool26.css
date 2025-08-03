@@ -1,0 +1,68 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.file-picker {
+  border: 2px dashed #2dd4bf;
+  padding: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.file-picker:hover {
+  background-color: #e0f7f5;
+}
+
+.file-picker.dragover {
+  background-color: #d1f2eb;
+  border-color: #17c3b2;
+}
+
+.start-btn, .clear-btn, .download-btn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.start-btn {
+  background-color: #2dd4bf;
+  color: white;
+}
+
+.clear-btn {
+  background-color: #f87171;
+  color: white;
+}
+
+.download-btn {
+  background-color: #60a5fa;
+  color: white;
+  text-decoration: none;
+}
+
+.start-btn:hover {
+  background-color: #1ac1aa;
+}
+
+.clear-btn:hover {
+  background-color: #ef4444;
+}
+
+.download-btn:hover {
+  background-color: #3b82f6;
+}
+
+.img-preview-container {
+  max-height: 500px;
+  overflow: hidden;
+  border: 2px solid #dee2e6;
+  border-radius: 10px;
+  background: #fff;
+  padding: 10px;
+}

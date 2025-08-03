@@ -1,16 +1,16 @@
-body {
+  body {
       background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
       font-family: 'Segoe UI', sans-serif;
       animation: fadeInBody 1s ease-in;
     }
-.tool-logo {
-  height: 8rem;
-  width: 8rem;
-  object-fit: contain;
-  max-width: 100%;
-  margin-bottom: 1rem;
-}
-
+    .tool-logo {
+      height: 8rem;
+      width: 8rem;
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
+    }
     .tool-section {
       max-width: 700px;
       margin: 50px auto;
@@ -22,7 +22,6 @@ body {
       text-align: center;
       animation: slideUp 1.2s ease-out;
     }
-
     .file-picker {
       border: 2px dashed #2dd4bf;
       border-radius: 10px;
@@ -33,29 +32,36 @@ body {
       color: #495057;
       animation: bounceIn 1.3s ease;
     }
-
     .file-picker:hover {
       background-color: #f8f9fa;
       transform: scale(1.05);
       box-shadow: 0 0 20px rgba(45, 212, 191, 0.3);
     }
-    #removeBgBtn{
-        background-color: #2dd4bf !important;
-        color: #fff;
-        border: none;
+    #deletePagesBtn, #downloadPdfBtn {
+      background-color: #2dd4bf !important;
+      color: #fff;
+      border: none;
     }
-    #downloadBtn{
-        background-color: #2dd4bf !important;
-        color: #fff;
-        border: none;
-    }
-    #preview img, #resultImage {
-      max-width: 100%;
-      border-radius: 10px;
+    #pdf-preview {
+      text-align: left;
       margin-top: 20px;
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 10px;
       animation: fadeIn 0.8s ease-in-out;
     }
-
+    .page-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #f1f5f9;
+      padding: 10px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
     .btn-custom {
       padding: 12px 24px;
       font-size: 16px;
@@ -65,7 +71,6 @@ body {
       overflow: hidden;
       animation: fadeInButtons 1.5s ease-in;
     }
-
     .btn-custom::before {
       content: '';
       position: absolute;
@@ -77,74 +82,32 @@ body {
       transition: all 0.4s ease-in-out;
       z-index: 0;
     }
-
     .btn-custom:hover::before {
       left: 0;
     }
-
     .btn-custom span {
       position: relative;
       z-index: 1;
     }
-
-    .btn-primary {
-      background-color: #2dd4bf;
-      border: 2px solid #2dd4bf;
-    }
-
-    .btn-primary:hover {
-      background-color: #2dd4bf;
-      border-color: #2dd4bf;
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(45, 212, 191, 0.6);
-    }
-
-    .btn-success {
-      background-color: #2dd4bf;
-      border: 2px solid #2dd4bf;
-    }
-
-    .btn-success:hover {
-      background-color: #2dd4bf;
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(45, 212, 191, 0.6);
-    }
-
-    .btn-remove-bg {
-      background-color: #2dd4bf;
-      border: 2px solid #2dd4bf;
-    }
-
-    .btn-remove-bg:hover {
-      background-color: #2dd4bf;
-      transform: scale(1.08);
-      box-shadow: 0 0 20px rgba(45, 212, 191, 0.7);
-    }
-
     .spinner-border-sm { margin-left: 10px; }
-    #output-image { display: none; animation: fadeIn 1s ease; }
+    #downloadSection { display: none; animation: fadeIn 1s ease; }
 
-    /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; transform: scale(0.95); }
       to { opacity: 1; transform: scale(1); }
     }
-
     @keyframes fadeInButtons {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes fadeInBody {
       from { background-color: #fff; opacity: 0; }
       to { background: linear-gradient(135deg, #e0f7fa, #f1f8e9); opacity: 1; }
     }
-
     @keyframes slideUp {
       from { opacity: 0; transform: translateY(40px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes bounceIn {
       0% { transform: scale(0.9); opacity: 0; }
       60% { transform: scale(1.05); opacity: 1; }
@@ -164,6 +127,6 @@ body {
     }
 
     .dropdown-item:hover {
-      background-color: #14b8a6 !;
+      background-color: #14b8a6 !important;
       color: #e2e8f0 !important;
     }

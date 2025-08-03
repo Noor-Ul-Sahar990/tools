@@ -90,41 +90,40 @@
     </div>
   </nav>
      <div class="container py-5" data-aos="fade-up">
-    
-    <!-- ✅ Heading Section -->
-    <div class="text-center mb-4" data-aos="fade-down" data-aos-duration="800">
-      <img src="https://img.icons8.com/ios-filled/100/2dd4bf/resize.png" class="mb-3" />
-      <h1 class="fw-bold">Image Resize Tool</h1>
-      <p class="lead">Resize your image by specifying width and height.</p>
-    </div>
 
-    <!-- ✅ File Picker -->
-    <div id="filePicker" class="d-flex align-items-center justify-content-center mb-4"
-         data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
-      <input type="file" class="d-none" />
-      <p class="text-muted mb-0">Drag & Drop or Click to upload an image</p>
-    </div>
-
-    <!-- ✅ Inputs -->
-    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
-      <div class="col-md-4">
-        <input type="number" class="form-control mb-3" placeholder="Width (px)" />
-        <input type="number" class="form-control" placeholder="Height (px)" />
-      </div>
-    </div>
-
-    <!-- ✅ Buttons -->
-    <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="600">
-      <div class="col-md-6 text-center">
-        <div class="d-flex flex-wrap justify-content-center gap-3">
-          <button class="start-btn">Resize</button>
-          <button class="clear-btn">Clear</button>
-          <button class="download-btn" disabled>Download</button>
-        </div>
-      </div>
-    </div>
-
+  <!-- ✅ Heading Section -->
+  <div class="text-center mb-4" data-aos="fade-down" data-aos-duration="800">
+    <img src="https://img.icons8.com/ios-filled/100/2dd4bf/resize.png" class="mb-3" />
+    <h1 class="fw-bold">Image Resize Tool</h1>
+    <p class="lead">Resize your image by specifying width and height.</p>
   </div>
+
+  <!-- ✅ File Picker -->
+  <div id="filePicker" class="d-flex align-items-center justify-content-center mb-4 border rounded p-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800" style="cursor:pointer;">
+    <input type="file" id="imageInput" class="d-none" />
+    <p class="text-muted mb-0" id="filePickerText">Drag & Drop or Click to upload an image</p>
+  </div>
+
+  <!-- ✅ Width/Height Inputs -->
+  <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="400">
+    <div class="col-md-4">
+      <input type="number" id="widthInput" class="form-control mb-3" placeholder="Width (px)" />
+      <input type="number" id="heightInput" class="form-control" placeholder="Height (px)" />
+    </div>
+  </div>
+
+  <!-- ✅ Buttons -->
+  <div class="row justify-content-center mt-4" data-aos="fade-up" data-aos-delay="600">
+    <div class="col-md-6 text-center">
+      <div class="d-flex flex-wrap justify-content-center gap-3">
+        <button id="resizeButton" class="btn btn-primary px-4">Resize</button>
+        <button id="clearResizeButton" class="btn btn-secondary px-4">Clear</button>
+        <button id="downloadResizeButton" class="btn btn-success px-4" disabled>Download</button>
+      </div>
+    </div>
+  </div>
+
+</div>
   <footer class="footer-colored mt-5">
   <div class="container py-4">
     <div class="row">
