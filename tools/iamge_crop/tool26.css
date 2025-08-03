@@ -3,23 +3,33 @@ body {
   background-color: #f8f9fa;
 }
 
-.file-picker {
+#filePicker {
+  height: 200px; /* Or any preferred height */
+  width: 500px;
   border: 2px dashed #2dd4bf;
-  padding: 40px;
-  border-radius: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
   cursor: pointer;
-  background-color: #ffffff;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   text-align: center;
+  padding: 20px;
 }
 
-.file-picker:hover {
-  background-color: #e0f7f5;
+#filePicker:hover {
+  background-color: #e6fffa;
+  border-color: #20c997;
 }
 
-.file-picker.dragover {
-  background-color: #d1f2eb;
-  border-color: #17c3b2;
+#filePicker p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Optional: When dragging file */
+#filePicker.dragover {
+  background-color: #d1f7f2;
+  border-color: #17b3a3;
 }
 
 .start-btn, .clear-btn, .download-btn {
@@ -65,4 +75,7 @@ body {
   border-radius: 10px;
   background: #fff;
   padding: 10px;
+}
+.justify-content-center{
+    width: 800px;
 }
