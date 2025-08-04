@@ -1,7 +1,10 @@
 .tool-logo {
-  height: 200px;
-  width: 200px;
-  object-fit: contain;
+      height: 8rem;
+      width: 8rem;
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
 }
 .tool-section h1 {
   font-size: 3rem;

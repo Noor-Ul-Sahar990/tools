@@ -6,9 +6,12 @@ body {
 }
 
 .tool-logo {
-  height: 80px;
-  width: 80px;
-  object-fit: contain;
+      height: 8rem;
+      width: 8rem;
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
 }
 
 .tool-section h1 {

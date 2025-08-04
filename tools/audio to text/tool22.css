@@ -6,10 +6,12 @@ body {
 }
 
 .tool-logo {
-  height: 8rem;
-  width: 8rem;
-  object-fit: contain;
-  margin-bottom: 1rem;
+      height: 8rem;
+      width: 8rem;
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
 }
 
 .container1 {

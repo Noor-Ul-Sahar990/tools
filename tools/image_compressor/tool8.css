@@ -1,8 +1,11 @@
 /* Tool Section */
 .tool-section .tool-logo {
-  height: 90px;
-  width: 90px;
-  object-fit: contain;
+      height: 8rem;
+      width: 8rem;
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
 }
 
 .tool-section h1 {
