@@ -1,0 +1,11 @@
+body {
+  background-color: #f9f9f9;
+}
+
+button {
+  min-width: 120px;
+}
+
+#formContainer input {
+  margin-bottom: 10px;
+}
