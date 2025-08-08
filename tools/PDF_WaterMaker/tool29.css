@@ -1,3 +1,4 @@
+/* Tool Section */
 .tool-section .tool-logo {
       height: 6rem;
       width: 6rem;
@@ -18,8 +19,9 @@
   color: #64748b;
 }
 
+/* File Picker */
 .file-picker {
-  border: 2px dashed #2dd4bf !important;
+  border: 2px dashed #2dd4bf;
   background: #ffffff;
   border-radius: 16px;
   min-height: 200px;
@@ -29,48 +31,25 @@
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 
-.file-picker.dragover {
-  border-color: #14b8a6;
-  background: #f8fafc;
-}
-
 .file-picker-content p {
   font-size: 1.1rem;
   color: #64748b;
   margin: 0;
 }
 
-#fileSizeText {
-  font-size: 0.9rem;
-  color: #1e293b;
-}
-
-.clear-btn {
-  font-size: 1rem;
-  padding: 0.5rem 1.5rem;
-  border-radius: 8px;
-  background-color: #6b7280;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.clear-btn:hover {
-  background-color: #4b5563;
-  transform: translateY(-2px);
-}
-
-.start-btn,
-.download-btn {
+/* Buttons */
+.start-btn, .download-btn, .clear-btn {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.75rem 2rem;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 0 0.3rem;
 }
 
-#startButton{
-  background-color: #2dd4bf !important;
-  border: none !important;
+.start-btn {
+  background-color: #2dd4bf;
+  border: none;
 }
 
 .start-btn:hover {
@@ -80,8 +59,7 @@
 }
 
 .download-btn {
-  background-color: #2dd4bf !important;
-  border: none !important;
+  background-color: #22c55e;
   border: none;
 }
 
@@ -96,52 +74,31 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.progress {
-  height: 1.5rem;
-  border-radius: 8px;
-  overflow: hidden;
+.clear-btn {
+  background-color: #6b7280;
+  border: none;
 }
 
-.progress-bar {
-  background-color: #2dd4bf !important;
+.clear-btn:hover {
+  background-color: #4b5563;
+  transform: translateY(-2px);
 }
 
+/* Message */
 #downloadMessage {
   font-size: 1rem;
   color: #2dd4bf;
   font-weight: 500;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .tool-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
-  .tool-section .lead {
+  .start-btn, .download-btn, .clear-btn {
     font-size: 1rem;
-  }
-
-  .tool-section .tool-logo {
-    height: 60px;
-    width: 60px;
-  }
-
-  .file-picker {
-    min-height: 150px;
-  }
-
-  .file-picker-content p {
-    font-size: 0.95rem;
-  }
-
-  .clear-btn {
-    font-size: 0.9rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .start-btn,
-  .download-btn {
-    font-size: 0.95rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.6rem 1.2rem;
   }
 }

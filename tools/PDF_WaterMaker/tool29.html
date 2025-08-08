@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF Watermark Tool - Converter Tools</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="tool29.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+</head>
+<body>
+
+  <!-- Tool Section -->
+  <section class="text-center py-5 tool-section container">
+    <img src="logo.png" alt="PDF Watermark" class="tool-logo" />
+    <h1>Add Watermark to PDF</h1>
+    <p class="lead">Upload your PDF and apply watermark text to all pages instantly.</p>
+
+    <!-- File Picker -->
+    <div class="my-4 file-picker" id="filePicker">
+      <div class="file-picker-content">
+        <input type="file" id="pdfInput" accept="application/pdf" class="form-control mb-3" />
+        <p>Select a PDF file to add watermark</p>
+      </div>
+    </div>
+
+    <!-- Watermark Inputs -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-4 mb-3">
+        <input type="text" id="watermarkText" class="form-control" placeholder="Enter watermark text" />
+      </div>
+      <div class="col-md-3 mb-3">
+        <select id="position" class="form-select">
+          <option value="center">Center</option>
+          <option value="top-left">Top Left</option>
+          <option value="top-right">Top Right</option>
+          <option value="bottom-left">Bottom Left</option>
+          <option value="bottom-right">Bottom Right</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mb-4">
+      <button class="btn start-btn" onclick="addWatermark()">Add Watermark</button>
+      <button class="btn download-btn" id="downloadBtn" disabled onclick="downloadPDF()">Download</button>
+      <button class="btn clear-btn" onclick="clearAll()">Clear</button>
+    </div>
+
+    <p id="downloadMessage"></p>
+  </section>
+
+  <script src="tool29.html"></script>
+</body>
+</html>
