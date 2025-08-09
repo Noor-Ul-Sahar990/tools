@@ -1,29 +1,29 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PDF Watermark Tool - Converter Tools</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="tool29.css" />
-  <link rel="stylesheet" href="../../css/styles.css" />
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add PDF Header & Footer - Converter Tools</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/styles.css">
+<link rel="stylesheet" href="tool30.css">
 </head>
 <body>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-    <div class="container">
+           <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
       <a class="navbar-brand logo-text" href="../../index.html">ConverterTools</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav ms-auto">
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               Tools
             </a>
-           <ul class="dropdown-menu" aria-labelledby="toolsDropdown" style="background-color: #2dd4bf">
+            <ul class="dropdown-menu" aria-labelledby="toolsDropdown" style="background-color: #2dd4bf">
               <li><a class="dropdown-item" title="PDF to JPG" href="../../tools/pdf_to_jpg/tool1.html">PDF to JPG</a></li>
               <li><a class="dropdown-item" title="PDF to PNG" href="../../tools/pdf_to_png/tool3.html">PDF to PNG</a></li>
               <li><a class="dropdown-item" title="JPG to PDF" href="../../tools/jpg_to_pdf/tool2.html">JPG to PDF</a></li>
@@ -48,7 +48,7 @@
               <li><a class="dropdown-item" title="Convert Audio to Text" href="../../audio to text/tool22.html">Audio to Text</a></li>
               <li><a class="dropdown-item" title="Convert Video to Animated GIF"  href="../../video to gift/tool23.html">Video to GIF</a></li>
               <li><a class="dropdown-item" title="Remove Background from Images" href="../../background remove/tool24.html">Backkground Remover</a></li>
-               <li><a class="dropdown-item" title="Delete pages from PDF files" href="../../tools/Delete_Page/tool25.html">Delete Page</a></li>
+              <li><a class="dropdown-item" title="Delete pages from PDF files" href="../../tools/Delete_Page/tool25.html">Delete Page</a></li>
               <li><a class="dropdown-item" title="Crop images easily online" href="../../tools/iamge_crop/tool26.html">Image Crop</a></li>
               <li><a class="dropdown-item" title="Create fillable online forms" href="../../tools/Creat_Form/tool27.html">Create Form</a></li>
               <li><a class="dropdown-item" title="Split PDF into multiple files" href="../../tools/Split PDF/tool28.html">Split PDF</a></li>
@@ -56,65 +56,49 @@
           </div>
           <a class="nav-link" title="Learn more about ConverterTools" href="../../pages/about.html">About Us</a>
           <a class="nav-link" title="Contact the ConverterTools team" href="../../pages/contact.html">Contact</a>
-      </div>
+        </div>
       </div>
     </div>
   </nav>
-<!-- Tool Section -->
-  <section class="tool-section" data-aos="fade-up">
+  <!-- tool seection. -->
+  <div class="container py-5 text-center">
+    <h1 class="fw-bold mb-3" data-aos="fade-down">Add PDF Header & Footer</h1>
+    <p class="lead" data-aos="fade-up">Upload your PDF and easily add header, footer, or page numbers.</p>
 
-    <img
-      src="../../assets/images/pdf-watermark.png"
-      alt="PDF Watermark"
-      class="tool-logo"
-      data-aos="zoom-in"
-      data-aos-delay="200"
-    />
-    <h1 data-aos="fade-right" data-aos-delay="300">Add Watermark to PDF</h1>
-    <p class="lead" data-aos="fade-left" data-aos-delay="400">
-      Upload your PDF and apply watermark text to all pages instantly.
-    </p>
+  <center>
+      <!-- Upload Box -->
+    <div id="dropZone" class="upload-area mt-4" data-aos="zoom-in">
+      <p>Drag & Drop your PDF here or click to select</p>
+      <input type="file" id="pdfFile" accept="application/pdf" hidden>
+    </div>
+  </center>
 
-    <div class="my-4 file-picker" id="filePicker" data-aos="fade-up" data-aos-delay="500">
-      <div class="file-picker-content text-center">
-        <input type="file" id="pdfInput" accept="application/pdf" hidden />
-        <p>
-          <strong>Drag & Drop</strong> your PDF here or
-          <span class="browse-text">browse</span>
-        </p>
-        <small class="text-muted">Only .pdf files are supported</small>
+    <!-- Inputs -->
+    <div class="row mt-4 justify-content-center" data-aos="fade-up">
+      <div class="col-md-4">
+        <input type="text" id="headerText" class="form-control" placeholder="Enter Header Text">
+      </div>
+      <div class="col-md-4">
+        <input type="text" id="footerText" class="form-control" placeholder="Enter Footer Text">
+      </div>
+      <div class="col-md-2 d-flex align-items-center">
+        <input type="checkbox" id="addPageNumbers" class="form-check-input me-2">
+        <label for="addPageNumbers" class="form-check-label">Add Page Numbers</label>
       </div>
     </div>
 
-    <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-delay="600" style="max-width: 600px; width: 100%;">
-      <div class="col-md-6 mb-3">
-        <input
-          type="text"
-          id="watermarkText"
-          class="form-control"
-          placeholder="Enter watermark text"
-        />
-      </div>
-      <div class="col-md-4 mb-3">
-        <select id="position" class="form-select">
-          <option value="center">Center</option>
-          <option value="top-left">Top Left</option>
-          <option value="top-right">Top Right</option>
-          <option value="bottom-left">Bottom Left</option>
-          <option value="bottom-right">Bottom Right</option>
-        </select>
-      </div>
+    <!-- Progress -->
+    <div class="progress mt-4 d-none" style="height: 25px;;">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progreebar" style="width: 0%"></div>
     </div>
 
-    <div class="mb-4" data-aos="fade-up" data-aos-delay="700">
-      <button class="btn start-btn" id="addWatermarkBtn">Add Watermark</button>
-      <button class="btn download-btn" id="downloadBtn" disabled>Download</button>
-      <button class="btn clear-btn" id="clearBtn">Clear</button>
+    <!-- Buttons -->
+    <div class="mt-4">
+      <button id="processBtn" class="btn btn-success me-2">Add Header & Footer</button>
+      <a id="downloadLink" href="#" class="btn btn-primary d-none" download="edited.pdf">Download PDF</a>
     </div>
-
-    <p id="downloadMessage" data-aos="fade-in" data-aos-delay="800"></p>
-  </section>
-   <footer class="footer-colored mt-5">
+  </div>
+  <footer class="footer-colored mt-5">
       <div class="container py-4">
         <div class="row">
           <!-- Tools -->
@@ -221,15 +205,41 @@
         </div>
       </div>
     </footer>
-   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
-  <script src="tool29.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  </script>
+    <!-- ✅ Bootstrap CSS (always goes in <head> or top of document) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+<!-- ✅ AOS CSS (for animations) -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+<!-- ✅ jsPDF for PDF generation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- ✅ html2canvas for capturing HTML to canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- ✅ AOS JS (after its CSS) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    easing: 'ease-in-out',
+    once: true
+  });
+</script>
+
+<!-- ✅ Your custom JS files (tool-specific and global app logic) -->
+<!-- PDFLib -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+
+<!-- Optional: PDF.js for previews -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+<!-- Your JS -->
+<script src="tool30.js"></script>
+
+<script src="../../js/app.js"></script>
+
+<!-- ✅ Bootstrap JS Bundle (includes Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

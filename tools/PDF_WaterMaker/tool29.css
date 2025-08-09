@@ -1,104 +1,126 @@
-/* Tool Section */
-.tool-section .tool-logo {
+/* Tool Section Styles with flexbox centering */
+    .tool-section {
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* Your existing styles you shared earlier, can be included in tool29.css */
+    .tool-section .tool-logo {
       height: 6rem;
       width: 6rem;
-  object-fit: contain;
-  max-width: 100%;
-  margin-bottom: 1rem;
-  border-radius: 20px;
-}
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
+    }
 
-.tool-section h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  color: #1e293b;
-}
+    .file-picker {
+      border: 2px dashed #2dd4bf;
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      height: 220px;
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+      margin: auto;
+    }
 
-.tool-section .lead {
-  font-size: 1.2rem;
-  color: #64748b;
-}
+    .file-picker:hover,
+    .file-picker.dragover {
+      border-color: #14b8a6;
+      background: #f8fafc;
+      transform: scale(1.02);
+    }
 
-/* File Picker */
-.file-picker {
-  border: 2px dashed #2dd4bf;
-  background: #ffffff;
-  border-radius: 16px;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color 0.3s ease, background 0.3s ease;
-}
+    .file-picker-content p {
+      font-size: 1.1rem;
+      color: #1e293b;
+      margin: 0;
+    }
 
-.file-picker-content p {
-  font-size: 1.1rem;
-  color: #64748b;
-  margin: 0;
-}
+    .start-btn,
+    .download-btn,
+    .clear-btn {
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 0 0.3rem;
+    }
 
-/* Buttons */
-.start-btn, .download-btn, .clear-btn {
-  font-size: 1.1rem;
-  font-weight: 500;
-  padding: 0.75rem 2rem;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0 0.3rem;
-}
+    .start-btn {
+      background-color: #2dd4bf;
+      border: none;
+    }
 
-.start-btn {
-  background-color: #2dd4bf;
-  border: none;
-}
+    .start-btn:hover {
+      background-color: #14b8a6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
 
-.start-btn:hover {
-  background-color: #14b8a6;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+    .download-btn {
+      background-color: #22c55e;
+      border: none;
+    }
 
-.download-btn {
-  background-color: #22c55e;
-  border: none;
-}
+    .download-btn:disabled {
+      background-color: #9ca3af;
+      cursor: not-allowed;
+    }
 
-.download-btn:disabled {
-  background-color: #9ca3af;
-  cursor: not-allowed;
-}
+    .download-btn:not(:disabled):hover {
+      background-color: #16a34a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
 
-.download-btn:not(:disabled):hover {
-  background-color: #16a34a;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
+    .clear-btn {
+      background-color: #6b7280;
+      border: none;
+    }
 
-.clear-btn {
-  background-color: #6b7280;
-  border: none;
-}
+    .clear-btn:hover {
+      background-color: #4b5563;
+      transform: translateY(-2px);
+    }
 
-.clear-btn:hover {
-  background-color: #4b5563;
-  transform: translateY(-2px);
-}
+    #downloadMessage {
+      font-size: 1rem;
+      color: #2dd4bf;
+      font-weight: 500;
+      min-height: 1.2em;
+      margin-top: 0.5rem;
+    }
 
-/* Message */
-#downloadMessage {
-  font-size: 1rem;
-  color: #2dd4bf;
-  font-weight: 500;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .tool-section h1 {
-    font-size: 2.2rem;
-  }
-
-  .start-btn, .download-btn, .clear-btn {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-}
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .tool-section .tool-logo {
+        height: 5rem;
+        width: 5rem;
+      }
+      .start-btn,
+      .download-btn,
+      .clear-btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.2rem;
+        margin: 0.3rem 0.2rem;
+      }
+      .file-picker {
+        height: 180px;
+        padding: 1.5rem;
+      }
+    }
