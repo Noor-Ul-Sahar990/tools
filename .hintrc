@@ -37,7 +37,8 @@
         "ignore": [
           "scrollbar-width",
           "scrollbar-width: thin",
-          "user-select"
+          "user-select",
+          "user-select: all"
         ]
       }
     ],
