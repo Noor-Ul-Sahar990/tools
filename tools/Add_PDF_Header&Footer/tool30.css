@@ -1,101 +1,77 @@
 body {
   background-color: #f1f5f9;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden; /* remove horizontal scrollbar */
 }
 
-/* Navbar */
-.bg-teal {
-  background-color: #2dd4bf !important;
+.tool-logo {
+  max-width: 100px;
 }
-.navbar-dark .navbar-nav .nav-link {
-  color: #fff !important;
+.tool-logo {
+      height: 6rem;
+      width: 6rem;
+      object-fit: contain;
+      max-width: 100%;
+      margin-bottom: 1rem;
+      border-radius: 20px;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: #f0fdfa !important;
-}
-#footerText{
-    border: 2px solid #2dd4bf;
-    width: 250px;
-}
-#headerText{
-        border: 2px solid #2dd4bf;
-        width: 250px;
-}
-/* Upload Box */
 .upload-area {
   border: 2px dashed #2dd4bf;
   background: #ffffff;
   border-radius: 16px;
   padding: 2rem;
-  min-height: 200px; /* Increased height */
-  width: 100%;       /* Full width of parent */
-  max-width: 600px;  /* Optional: limit width for desktop */
+  min-height: 200px;
+  max-width: 600px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; /* So text/icons stack */
+  flex-direction: column;
   text-align: center;
-  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
+  transition: 0.3s ease;
   cursor: pointer;
 }
 
-.upload-area.dragover {
-  border-color: #14b8a6;
-  background: #f8fafc;
-  transform: scale(1.02); /* Slight zoom effect on hover/drag */
-}
-#downloadLink{
-    background-color: #2dd4bf;
-    border: none;
-}
 .upload-area:hover {
   background-color: #ecfeff;
   transform: translateY(-2px);
 }
-.upload-area.dragover {
-  border-color: #14b8a6;
-  background-color: #f8fafc;
+
+#headerText, #footerText {
+  border: 2px solid #2dd4bf;
 }
 
-/* Progress */
-.progress {
-  border-radius: 8px;
-  overflow: hidden;
-}
-.progress-bar {
-  background-color: #2dd4bf !important;
-}
-/* Buttons */
 .btn {
   font-size: 1.1rem;
   border-radius: 8px;
   padding: 0.6rem 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+    .dropdown-menu {
+      background-color: #2dd4bf !important;
+      border: none !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+      border-radius: 8px !important;
+      overflow-y: auto !important;
+      max-height: 200px !important;
+    }
+
+    .dropdown-item {
+      color: #fff !important;
+    }
+
+    .dropdown-item:hover {
+      background-color: #14b8a6 !important;
+      color: #e2e8f0 !important;
+    }
 .btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Footer */
-.footer-colored {
-  background-color: #2dd4bf !important;
-  color: #ffffff;
-  padding: 1rem 0;
-}
-.footer-colored p {
-  margin: 0;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
-  .btn {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
   .upload-area {
-    min-height: 120px;
+    min-height: 150px;
     padding: 1rem;
   }
 }

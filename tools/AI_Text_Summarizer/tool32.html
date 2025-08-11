@@ -1,64 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Text Summarizer Tool | ConverterTools</title>
 
-  <title>Image Color Picker – Free HEX & RGB Code Extractor | Converter Tools</title>
-  <meta name="description" content="Use our free online Image Color Picker to extract HEX and RGB color codes from any image instantly. Fast, easy, and no signup required." />
-  <meta name="keywords" content="Image Color Picker, HEX code extractor, RGB color picker, Image to color code, Online color tool, Free color code extractor" />
-  <meta name="author" content="Converter Tools" />
-  <link rel="canonical" href="https://tools-zeta-flame.vercel.app/tools/color_pikker/tool17.html" />
+  <!-- Meta tags -->
+  <meta name="description" content="AI Text Summarizer tool to quickly summarize long text into concise summary." />
+  <meta name="keywords" content="AI Text Summarizer, text summary tool, online text summarizer" />
+  <meta name="author" content="ConverterTools" />
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Image Color Picker – Extract HEX & RGB from Images" />
-  <meta property="og:description" content="Extract HEX and RGB color codes from any image using our free Image Color Picker tool." />
-  <meta property="og:url" content="https://tools-zeta-flame.vercel.app/tools/color_pikker/tool17.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://tools-zeta-flame.vercel.app/assets/color-picker-preview.jpg" /> <!-- Replace with actual image -->
+  <!-- Stylesheets -->
+  <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" />
-
-  <!-- Bootstrap + AOS + Fonts + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="tool17.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="tool32.css" />
   <link rel="stylesheet" href="../../css/styles.css" />
-
-  <!-- Structured Data (JSON-LD Schema) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Image Color Picker",
-    "description": "Free online tool to extract HEX and RGB color codes from images.",
-    "applicationCategory": "Utility",
-    "operatingSystem": "All",
-    "url": "https://tools-zeta-flame.vercel.app/tools/color_pikker/tool17.html",
-    "offers": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "USD"
-    }
-  }
-  </script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
       <a class="navbar-brand logo-text" href="../../index.html">ConverterTools</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav ms-auto">
           <div class="dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Tools
             </a>
             <ul class="dropdown-menu" aria-labelledby="toolsDropdown" style="background-color: #2dd4bf">
@@ -98,32 +73,52 @@
           </div>
           <a class="nav-link" title="Learn more about ConverterTools" href="../../pages/about.html">About Us</a>
           <a class="nav-link" title="Contact the ConverterTools team" href="../../pages/contact.html">Contact</a>
-        </div>
+      </div>
       </div>
     </div>
   </nav>
- <!-- Main Tool -->
-  <div class="container1">
-    <div>
-    <img src="../../assets/images/color-piiker.png" alt="Uploaded image for color picking" class="tool-logo mb-3" />
-      <h1 class="display-4 fw-bold mb-3">Color Pikker</h1>
-      <p class="lead">Upload an image and click anywhere to pick a color</p>
+<div class="container full-page-section">
+    <div class="tool-section text-center" data-aos="fade-down">
+      <img
+        src="../../assets/images/AI-Text-Summerize.png"
+        alt="AI Text Summarizer Logo"
+        class="tool-logo"
+      />
+      <h1>Text Summarizer</h1>
+      <p class="lead">Paste your text below to get a quick summary instantly.</p>
     </div>
-    <div class="upload-box" id="dropZone">
-      <input type="file" id="imageInput" accept="image/*" />
-      <label for="imageInput">Drag & Drop or Click to Upload</label>
+
+    <div class="row w-100 justify-content-center" data-aos="zoom-in">
+      <div class="col-md-8 position-relative">
+        <label for="inputText" class="form-label fw-semibold">Enter Text to Summarize</label>
+        <textarea id="inputText" class="form-control" rows="6" placeholder="Paste your text here..."></textarea>
+      </div>
     </div>
 
-    <canvas id="imageCanvas" class="hidden"></canvas>
+    <div class="row w-100 justify-content-center mt-4" data-aos="zoom-in">
+      <div class="col-md-8 d-flex gap-3 flex-wrap justify-content-center">
+        <button id="generateBtn" class="btn start-btn flex-grow-1 flex-md-grow-0">Generate Summary</button>
+        <button id="clearBtnInput" class="btn clear-btn flex-grow-1 flex-md-grow-0">Clear Input</button>
+      </div>
+    </div>
 
-    <div id="colorInfo" class="hidden">
-      <div id="colorPreview"></div>
-    <p><strong>HEX:</strong> <span id="hexValue" style="cursor:pointer;"></span></p>
-<p><strong>RGB:</strong> <span id="rgbValue" style="cursor:pointer;"></span></p>
+    <div class="row w-100 justify-content-center mt-4" data-aos="zoom-in">
+      <div class="col-md-8 position-relative">
+        <label for="summaryOutput" class="form-label fw-semibold">Summary</label>
+        <textarea id="summaryOutput" class="form-control" rows="5" readonly placeholder="Your summary will appear here..."></textarea>
+        <button id="copyBtn" class="copy-btn" title="Copy summary" aria-label="Copy summary">
+          <i class="bi bi-copy" ></i>
+        </button>
+      </div>
+    </div>
 
-      <p id="copyMsg">Copied to clipboard!</p>
+    <div class="row w-100 justify-content-center mt-3" data-aos="zoom-in">
+      <div class="col-md-8 d-flex justify-content-center">
+        <button id="clearBtnOutput" class="btn clear-btn w-50">Clear Summary</button>
+      </div>
     </div>
   </div>
+
  <footer class="footer-colored mt-5">
       <div class="container py-4">
         <div class="row">
@@ -240,17 +235,16 @@
         </div>
       </div>
     </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.min.js"></script>
+  <script src="tool32.js"></script>
   <script>
-    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
   </script>
-  <script src="tool17.js"></script>
-  <script src="../../js/app.js"></script>
-  
-  <!-- ✅ Required Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

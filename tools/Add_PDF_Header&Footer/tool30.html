@@ -62,7 +62,7 @@
               aria-expanded="false">
               Tools
             </a>
-            <ul class="dropdown-menu" aria-labelledby="toolsDropdown" style="background-color: #2dd4bf">
+            <ul class="dropdown-menu" aria-labelledby="toolsDropdown" style="background-color: #2dd4bf !important">
               <li><a class="dropdown-item" title="PDF to JPG" href="../../tools/pdf_to_jpg/tool1.html">PDF to JPG</a></li>
               <li><a class="dropdown-item" title="PDF to PNG" href="../../tools/pdf_to_png/tool3.html">PDF to PNG</a></li>
               <li><a class="dropdown-item" title="JPG to PDF" href="../../tools/jpg_to_pdf/tool2.html">JPG to PDF</a></li>
@@ -91,6 +91,10 @@
               <li><a class="dropdown-item" title="Crop images easily online" href="../../tools/iamge_crop/tool26.html">Image Crop</a></li>
               <li><a class="dropdown-item" title="Create fillable online forms" href="../../tools/Creat_Form/tool27.html">Create Form</a></li>
               <li><a class="dropdown-item" title="Split PDF into multiple files" href="../../tools/Split PDF/tool28.html">Split PDF</a></li>
+              <li><a class="dropdown-item" title="Add watermark to PDF files" href="../../tools/PDF_WaterMaker/tool29.html">Water Maker</a></li>
+              <li><a class="dropdown-item" title="Add headers and footers to PDF files" href="../../tools/Add_PDF_Header&Footer/tool30.html">Add Header & Footer</a></li>
+              <li><a class="dropdown-item" title="Generate strong and secure passwords" href="../../tools/password_generator/tool31.html">Password Generator</a></li>
+              <li><a class="dropdown-item" title="Summarize long text using AI" href="../../tools/AI_Text_Summarizer/tool32.html">Text Summarizer</a></li>
             </ul>
           </div>
           <a class="nav-link" title="Learn more about ConverterTools" href="../../pages/about.html">About Us</a>
@@ -100,43 +104,47 @@
     </div>
   </nav>
   <!-- tool seection. -->
-  <div class="container py-5 text-center">
-    <h1 class="fw-bold mb-3" data-aos="fade-down">Add PDF Header & Footer</h1>
-    <p class="lead" data-aos="fade-up">Upload your PDF and easily add header, footer, or page numbers.</p>
+<div class="container py-5" data-aos="fade-up">
+  <!-- Icon + Title -->
+  <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+    <img src="../../assets/images/Add_Hearde&Footer.png" alt="PDF Header Footer Icon" class="tool-logo mb-3" />
+    <h1 class="display-5 fw-bold mb-2">Add PDF Header & Footer</h1>
+    <p class="lead">Upload your PDF and easily add header, footer, or page numbers.</p>
+  </div>
 
-  <center>
-      <!-- Upload Box -->
-    <div id="dropZone" class="upload-area mt-4" data-aos="zoom-in">
+  <!-- Upload Box -->
+  <div class="d-flex justify-content-center mt-4" data-aos="zoom-in" data-aos-delay="200">
+    <div id="dropZone" class="upload-area">
       <p>Drag & Drop your PDF here or click to select</p>
       <input type="file" id="pdfFile" accept="application/pdf" hidden>
     </div>
-  </center>
+  </div>
 
-    <!-- Inputs -->
-    <div class="row mt-4 justify-content-center" data-aos="fade-up">
-      <div class="col-md-4">
-        <input type="text" id="headerText" class="form-control" placeholder="Enter Header Text">
-      </div>
-      <div class="col-md-4">
-        <input type="text" id="footerText" class="form-control" placeholder="Enter Footer Text">
-      </div>
-      <div class="col-md-2 d-flex align-items-center">
-        <input type="checkbox" id="addPageNumbers" class="form-check-input me-2">
-        <label for="addPageNumbers" class="form-check-label">Add Page Numbers</label>
-      </div>
+  <!-- Inputs -->
+  <div class="row mt-4 justify-content-center" data-aos="fade-up">
+    <div class="col-md-3 mb-2">
+      <input type="text" id="headerText" class="form-control" placeholder="Enter Header Text">
     </div>
-
-    <!-- Progress -->
-    <div class="progress mt-4 d-none" style="height: 25px;;">
-      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progreebar" style="width: 0%"></div>
+    <div class="col-md-3 mb-2">
+      <input type="text" id="footerText" class="form-control" placeholder="Enter Footer Text">
     </div>
-
-    <!-- Buttons -->
-    <div class="mt-4">
-      <button id="processBtn" class="btn btn-success me-2">Add Header & Footer</button>
-      <a id="downloadLink" href="#" class="btn btn-primary d-none" download="edited.pdf">Download PDF</a>
+    <div class="col-md-3 d-flex align-items-center justify-content-center mb-2">
+      <input type="checkbox" id="addPageNumbers" class="form-check-input me-2">
+      <label for="addPageNumbers" class="form-check-label">Add Page Numbers</label>
     </div>
   </div>
+
+  <!-- Progress -->
+  <div class="progress mt-4 d-none" style="height: 25px;">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="progreebar" style="width: 0%"></div>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mt-4 text-center">
+    <button id="processBtn" class="btn btn-success me-2">Add Header & Footer</button>
+    <a id="downloadLink" href="#" class="btn btn-primary d-none" download="edited.pdf">Download PDF</a>
+  </div>
+</div>
   <footer class="footer-colored mt-5">
       <div class="container py-4">
         <div class="row">
@@ -210,6 +218,16 @@
     <li><a href="../../tools/iamge_crop/tool26.html">Image Crop</a></li>
     <li><a href="../../tools/Creat_Form/tool27.html">Create Form</a></li>
     <li><a href="../../tools/Split PDF/tool28.html">Split PDF</a></li>
+  </ul>
+</div>
+<!-- RESOURCES TOOLS -->
+<div class="col-md-3 col-6 mb-3">
+  <h6 class="text-uppercase fw-bold">RESOURCES TOOLS</h6>
+  <ul class="list-unstyled">
+    <li><a href="../../tools/PDF_WaterMaker/tool29.html">Water Maker</a></li>
+    <li><a href="../../tools/Add_PDF_Header&Footer/tool30.html">Add Header&Footer</a></li>
+    <li><a href="../../tools/password_generator/tool31.html">Password Generate</a></li>
+    <li><a href="../../tools/AI_Text_Summarizer/tool32.html">AI-Text-Summerize</a></li>
   </ul>
 </div>
 

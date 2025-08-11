@@ -17,7 +17,23 @@
   font-size: 1.2rem;
   color: #64748b;
 }
+    .dropdown-menu {
+      background-color: #2dd4bf !important;
+      border: none !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+      border-radius: 8px !important;
+      overflow-y: auto !important;
+      max-height: 200px !important;
+    }
 
+    .dropdown-item {
+      color: #fff !important;
+    }
+
+    .dropdown-item:hover {
+      background-color: #14b8a6 !important;
+      color: #e2e8f0 !important;
+    }
 .file-picker {
   border: 2px dashed #2dd4bf !important;
   background: #ffffff;

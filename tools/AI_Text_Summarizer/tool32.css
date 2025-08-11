@@ -1,0 +1,130 @@
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1e293b;
+      min-height: 100vh;
+    }
+
+    .full-page-section {
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tool-section .tool-logo {
+      height: 6rem;
+      width: 6rem;
+      object-fit: contain;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+
+    .tool-section h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 0.75rem;
+    }
+
+    .tool-section .lead {
+      font-size: 1.2rem;
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+
+    textarea.form-control {
+      border-radius: 12px;
+      font-size: 1.1rem;
+      resize: vertical;
+      padding: 1rem;
+      box-shadow: 0 0 8px rgb(45 212 191 / 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+
+    textarea.form-control:focus {
+      box-shadow: 0 0 12px #2dd4bf;
+      border-color: #2dd4bf;
+      outline: none;
+    }
+
+    .start-btn,
+    .clear-btn,
+    .copy-btn {
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 0.75rem 1.75rem;
+      transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+      border: none;
+    }
+
+    .start-btn {
+      background-color: #2dd4bf;
+      color: #fff;
+    }
+
+    .start-btn:hover {
+      background-color: #14b8a6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgb(20 184 166 / 0.4);
+    }
+
+    .clear-btn {
+      background-color: #6b7280;
+      color: #fff;
+    }
+
+    .clear-btn:hover {
+      background-color: #4b5563;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 40px;
+      right: 10px;
+      padding: 0.35rem 1rem;
+      font-size: 1.3rem;
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .copy-btn:hover {
+      background-color: #14b8a6;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(22, 163, 74, 0.5);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .tool-section h1 {
+        font-size: 2.25rem;
+      }
+
+      .tool-section .lead {
+        font-size: 1rem;
+      }
+
+      textarea.form-control {
+        font-size: 1rem;
+      }
+
+      .start-btn,
+      .clear-btn,
+      .copy-btn {
+        font-size: 1rem;
+        padding: 0.5rem 1.25rem;
+      }
+
+      .copy-btn {
+        top: 8px;
+        right: 8px;
+      }
+    }
