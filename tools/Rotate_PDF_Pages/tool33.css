@@ -1,0 +1,145 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f9fafb;
+  color: #1e293b;
+  min-height: 100vh;
+}
+
+.full-page-section {
+  min-height: 100vh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.tool-section .tool-logo {
+  height: 6rem;
+  width: 6rem;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.tool-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.tool-section .lead {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+.file-picker {
+  border: 2px dashed #2dd4bf !important;
+  background: #ffffff;
+  border-radius: 16px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.file-picker.dragover {
+  border-color: #14b8a6;
+  background: #f8fafc;
+}
+
+.file-picker-content p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+#fileSizeText {
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+.clear-btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  background-color: #6b7280;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #4b5563;
+  transform: translateY(-2px);
+}
+
+.start-btn, .download-btn {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.start-btn {
+  background-color: #2dd4bf;
+  border: none;
+  color: white;
+}
+
+.start-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.start-btn:hover:not(:disabled) {
+  background-color: #14b8a6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.4);
+}
+
+.download-btn {
+  background-color: #22c55e;
+  border: none;
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.5);
+}
+
+.download-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .tool-section h1 {
+    font-size: 2.25rem;
+  }
+
+  .tool-section .lead {
+    font-size: 1rem;
+  }
+
+  .file-picker {
+    min-height: 150px;
+  }
+
+  .file-picker-content p {
+    font-size: 1rem;
+  }
+
+  .start-btn, .download-btn, .clear-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.footer-colored {
+  background-color: #2dd4bf !important;
+  color: #fff;
+  font-size: 14px;
+  padding: 1rem 0;
+}
