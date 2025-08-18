@@ -1,0 +1,95 @@
+/* Base */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Tool Section */
+.tool-section .tool-logo {
+  height: 6rem;
+  width: 6rem;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.tool-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e293b;
+}
+
+.tool-section .lead {
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+/* Buttons */
+.action-btn,
+.btn-primary {
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease;
+}
+
+.btn-primary,
+.btn-success {
+  background-color: #2dd4bf;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: #14b8a6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-secondary {
+  background-color: #6b7280;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #4b5563;
+  transform: translateY(-2px);
+}
+
+/* Textareas */
+textarea.form-control {
+  border: 1px solid #2dd4bf;
+  border-radius: 10px;
+}
+
+/* Stats */
+.stat-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Footer */
+.footer-colored {
+  background-color: #2dd4bf !important;
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tool-section h1 { font-size: 2.2rem; }
+  .tool-section .lead { font-size: 1rem; }
+  .action-btn,
+  .btn { font-size: 0.95rem; padding: 0.45rem 1.1rem; }
+  .stat-value { font-size: 1.4rem; }
+}
